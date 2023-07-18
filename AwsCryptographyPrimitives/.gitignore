@@ -2,5 +2,7 @@ TestResults
 ImplementationFromDafny.cs
 TestsFromDafny.cs
 
+.idea/*
+
 **/bin
 **/obj
