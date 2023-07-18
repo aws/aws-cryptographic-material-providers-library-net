@@ -1,4 +1,8 @@
 TestResults
 ImplementationFromDafny.cs
 TestsFromDafny.cs
-/runtimes/java/dafny
+
+.idea/*
+
+bin
+obj
