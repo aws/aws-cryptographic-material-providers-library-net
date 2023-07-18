@@ -306,12 +306,12 @@ transpile_dependencies_net: transpile_dependencies
 
 test_net:
 	dotnet run \
-		--project runtimes/net/tests/ \
+		--project tests/ \
 		--framework net6.0
 
 test_net_mac_intel:
 	DYLD_LIBRARY_PATH="/usr/local/opt/openssl@1.1/lib" dotnet run \
-		--project runtimes/net/tests/ \
+		--project tests/ \
 		--framework net6.0
 
 test_net_mac_brew:
