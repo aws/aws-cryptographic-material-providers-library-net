@@ -9,7 +9,7 @@ using System;
 using System.Numerics;
 using System.Collections;
 [assembly: DafnyAssembly.DafnySourceAttribute(@"// dafny 4.1.0.0
-// Command Line Options: -stdin -noVerify -vcsCores:2 -compileTarget:cs -spillTargetCode:3 -compile:0 -optimizeErasableDatatypeWrapper:0 -quantifierSyntax:3 -unicodeChar:0 -functionSyntax:3 -useRuntimeLib -out runtimes/net/ImplementationFromDafny -library:/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/StandardLibrary/src/Index.dfy -library:/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/src/Index.dfy -library:/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/ComAmazonawsKms/src/Index.dfy -library:/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/ComAmazonawsDynamodb/src/Index.dfy -library:/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographicMaterialProviders/dafny/AwsCryptographicMaterialProviders/src/Index.dfy -library:/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographicMaterialProviders/dafny/AwsCryptographyKeyStore/src/Index.dfy
+// Command Line Options: -stdin -noVerify -vcsCores:2 -compileTarget:cs -spillTargetCode:3 -compile:0 -optimizeErasableDatatypeWrapper:0 -quantifierSyntax:3 -unicodeChar:0 -functionSyntax:3 -useRuntimeLib -out runtimes/net/ImplementationFromDafny -library:/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/StandardLibrary/src/Index.dfy -library:/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/src/Index.dfy -library:/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/ComAmazonawsKms/src/Index.dfy -library:/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/ComAmazonawsDynamodb/src/Index.dfy -library:/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographicMaterialProviders/dafny/AwsCryptographicMaterialProviders/src/Index.dfy -library:/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographicMaterialProviders/dafny/AwsCryptographyKeyStore/src/Index.dfy
 // the_program
 
 
@@ -5949,7 +5949,7 @@ namespace software.amazon.cryptography.materialproviderstestvectorkeys.internald
       _out23 = FileIO_Compile.__default.ReadBytesFromFile((config).dtor_keyManifiestPath);
       _342_valueOrError0 = _out23;
       if (!(!((_342_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/KeyVectors/src/Index.dfy(26,23): " + _342_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/KeyVectors/src/Index.dfy(26,23): " + _342_valueOrError0);}
       _341_keysManifestBv = (_342_valueOrError0).Extract();
       Dafny.ISequence<byte> _343_keysManifestBytes;
       _343_keysManifestBytes = JSONHelpers_Compile.__default.BvToBytes(_341_keysManifestBv);
@@ -5964,15 +5964,15 @@ namespace software.amazon.cryptography.materialproviderstestvectorkeys.internald
       }
       _344_keysManifestJSON = (_345_valueOrError1).Extract();
       if (!((_344_keysManifestJSON).is_Object)) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/KeyVectors/src/Index.dfy(32,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/KeyVectors/src/Index.dfy(32,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       JSON_mValues_Compile._IJSON _347_keysObject;
       Wrappers_Compile._IResult<JSON_mValues_Compile._IJSON, Dafny.ISequence<char>> _348_valueOrError2 = Wrappers_Compile.Result<JSON_mValues_Compile._IJSON, Dafny.ISequence<char>>.Default(JSON_mValues_Compile.JSON.Default());
       _348_valueOrError2 = JSONHelpers_Compile.__default.Get(Dafny.Sequence<char>.FromString("keys"), (_344_keysManifestJSON).dtor_obj);
       if (!(!((_348_valueOrError2).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/KeyVectors/src/Index.dfy(33,19): " + _348_valueOrError2);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/KeyVectors/src/Index.dfy(33,19): " + _348_valueOrError2);}
       _347_keysObject = (_348_valueOrError2).Extract();
       if (!((_347_keysObject).is_Object)) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/KeyVectors/src/Index.dfy(34,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/KeyVectors/src/Index.dfy(34,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.MaterialProvidersClient, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _349_maybeMpl;
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.MaterialProvidersClient, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _out24;
       _out24 = software.amazon.cryptography.materialproviders.internaldafny.__default.MaterialProviders(software.amazon.cryptography.materialproviders.internaldafny.__default.DefaultMaterialProvidersConfig());
@@ -6146,7 +6146,7 @@ namespace TestVectorsUtils_Compile {
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, Dafny.ISequence<char>> _359_valueOrError0 = Wrappers_Compile.Result<Dafny.ISequence<byte>, Dafny.ISequence<char>>.Default(UTF8.ValidUTF8Bytes.Default());
       _359_valueOrError0 = UTF8.__default.Encode(Dafny.Sequence<char>.FromString("a"));
       if (!(!((_359_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(39,43): " + _359_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(39,43): " + _359_valueOrError0);}
       _358_validUTF8char = (_359_valueOrError0).Extract();
       Dafny.ISequence<byte> _360_key;
       _360_key = Dafny.Sequence<byte>.FromElements();
@@ -6165,7 +6165,7 @@ namespace TestVectorsUtils_Compile {
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, Dafny.ISequence<char>> _363_valueOrError0 = Wrappers_Compile.Result<Dafny.ISequence<byte>, Dafny.ISequence<char>>.Default(UTF8.ValidUTF8Bytes.Default());
       _363_valueOrError0 = UTF8.__default.Encode(Dafny.Sequence<char>.FromString("a"));
       if (!(!((_363_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(59,12): " + _363_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(59,12): " + _363_valueOrError0);}
       _362_val = (_363_valueOrError0).Extract();
       Dafny.IMap<Dafny.ISequence<byte>,Dafny.ISequence<byte>> _364_encCtx;
       _364_encCtx = Dafny.Map<Dafny.ISequence<byte>, Dafny.ISequence<byte>>.FromElements();
@@ -6190,25 +6190,25 @@ namespace TestVectorsUtils_Compile {
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, Dafny.ISequence<char>> _368_valueOrError0 = Wrappers_Compile.Result<Dafny.ISequence<byte>, Dafny.ISequence<char>>.Default(UTF8.ValidUTF8Bytes.Default());
       _368_valueOrError0 = UTF8.__default.Encode(Dafny.Sequence<char>.FromString("keyA"));
       if (!(!((_368_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(86,13): " + _368_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(86,13): " + _368_valueOrError0);}
       _367_keyA = (_368_valueOrError0).Extract();
       Dafny.ISequence<byte> _369_valA;
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, Dafny.ISequence<char>> _370_valueOrError1 = Wrappers_Compile.Result<Dafny.ISequence<byte>, Dafny.ISequence<char>>.Default(UTF8.ValidUTF8Bytes.Default());
       _370_valueOrError1 = UTF8.__default.Encode(Dafny.Sequence<char>.FromString("valA"));
       if (!(!((_370_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(87,13): " + _370_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(87,13): " + _370_valueOrError1);}
       _369_valA = (_370_valueOrError1).Extract();
       Dafny.ISequence<byte> _371_keyB;
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, Dafny.ISequence<char>> _372_valueOrError2 = Wrappers_Compile.Result<Dafny.ISequence<byte>, Dafny.ISequence<char>>.Default(UTF8.ValidUTF8Bytes.Default());
       _372_valueOrError2 = UTF8.__default.Encode(Dafny.Sequence<char>.FromString("keyB"));
       if (!(!((_372_valueOrError2).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(88,13): " + _372_valueOrError2);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(88,13): " + _372_valueOrError2);}
       _371_keyB = (_372_valueOrError2).Extract();
       Dafny.ISequence<byte> _373_valB;
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, Dafny.ISequence<char>> _374_valueOrError3 = Wrappers_Compile.Result<Dafny.ISequence<byte>, Dafny.ISequence<char>>.Default(UTF8.ValidUTF8Bytes.Default());
       _374_valueOrError3 = UTF8.__default.Encode(Dafny.Sequence<char>.FromString("valB"));
       if (!(!((_374_valueOrError3).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(89,13): " + _374_valueOrError3);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(89,13): " + _374_valueOrError3);}
       _373_valB = (_374_valueOrError3).Extract();
       TestVectorsUtils_Compile._ISmallEncryptionContextVariation _source12 = v;
       if (_source12.is_Empty) {
@@ -6229,19 +6229,19 @@ namespace TestVectorsUtils_Compile {
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, Dafny.ISequence<char>> _376_valueOrError0 = Wrappers_Compile.Result<Dafny.ISequence<byte>, Dafny.ISequence<char>>.Default(UTF8.ValidUTF8Bytes.Default());
       _376_valueOrError0 = UTF8.__default.Encode(keyProviderId);
       if (!(!((_376_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(109,29): " + _376_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(109,29): " + _376_valueOrError0);}
       _375_encodedkeyProviderId = (_376_valueOrError0).Extract();
       Dafny.ISequence<byte> _377_encodedKeyProviderInfo;
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, Dafny.ISequence<char>> _378_valueOrError1 = Wrappers_Compile.Result<Dafny.ISequence<byte>, Dafny.ISequence<char>>.Default(UTF8.ValidUTF8Bytes.Default());
       _378_valueOrError1 = UTF8.__default.Encode(keyProviderInfo);
       if (!(!((_378_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(110,31): " + _378_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(110,31): " + _378_valueOrError1);}
       _377_encodedKeyProviderInfo = (_378_valueOrError1).Extract();
       Dafny.ISequence<byte> _379_fakeCiphertext;
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, Dafny.ISequence<char>> _380_valueOrError2 = Wrappers_Compile.Result<Dafny.ISequence<byte>, Dafny.ISequence<char>>.Default(UTF8.ValidUTF8Bytes.Default());
       _380_valueOrError2 = UTF8.__default.Encode(Dafny.Sequence<char>.FromString("fakeCiphertext"));
       if (!(!((_380_valueOrError2).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(111,23): " + _380_valueOrError2);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(111,23): " + _380_valueOrError2);}
       _379_fakeCiphertext = (_380_valueOrError2).Extract();
       edk = software.amazon.cryptography.materialproviders.internaldafny.types.EncryptedDataKey.create(_375_encodedkeyProviderId, _377_encodedKeyProviderInfo, _379_fakeCiphertext);
       return edk;
@@ -6265,7 +6265,7 @@ namespace TestVectorsUtils_Compile {
       _out25 = software.amazon.cryptography.primitives.internaldafny.__default.AtomicPrimitives(software.amazon.cryptography.primitives.internaldafny.__default.DefaultCryptoConfig());
       _383_valueOrError0 = _out25;
       if (!(!((_383_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(139,15): " + _383_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(139,15): " + _383_valueOrError0);}
       _382_crypto = (_383_valueOrError0).Extract();
       software.amazon.cryptography.materialproviders.internaldafny.types._IAlgorithmSuiteInfo _384_suite;
       _384_suite = AlgorithmSuites_Compile.__default.GetSuite(algorithmSuiteId);
@@ -6278,7 +6278,7 @@ namespace TestVectorsUtils_Compile {
         _out26 = (_382_crypto).GenerateECDSASignatureKey(software.amazon.cryptography.primitives.internaldafny.types.GenerateECDSASignatureKeyInput.create((((_384_suite).dtor_signature).dtor_ECDSA).dtor_curve));
         _388_valueOrError1 = _out26;
         if (!(!((_388_valueOrError1).IsFailure()))) {
-          throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(144,15): " + _388_valueOrError1);}
+          throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(144,15): " + _388_valueOrError1);}
         _387_pair = (_388_valueOrError1).Extract();
         _385_signingKey = Wrappers_Compile.Option<Dafny.ISequence<byte>>.create_Some((_387_pair).dtor_signingKey);
         _386_verificationKey = Wrappers_Compile.Option<Dafny.ISequence<byte>>.create_Some((_387_pair).dtor_verificationKey);
@@ -6289,7 +6289,7 @@ namespace TestVectorsUtils_Compile {
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types._IEncryptionMaterials, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _389_valueOrError2 = default(Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types._IEncryptionMaterials, software.amazon.cryptography.materialproviders.internaldafny.types._IError>);
       _389_valueOrError2 = (mpl).InitializeEncryptionMaterials(software.amazon.cryptography.materialproviders.internaldafny.types.InitializeEncryptionMaterialsInput.create(algorithmSuiteId, encryptionContext, Dafny.Sequence<Dafny.ISequence<byte>>.FromElements(), _385_signingKey, _386_verificationKey));
       if (!(!((_389_valueOrError2).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(157,24): " + _389_valueOrError2);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectorsUtils.dfy(157,24): " + _389_valueOrError2);}
       encryptionMaterials = (_389_valueOrError2).Extract();
       return encryptionMaterials;
     }
@@ -6606,14 +6606,14 @@ namespace KeyringExpectations_Compile {
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types._IDecryptionMaterials, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _397_valueOrError0 = default(Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types._IDecryptionMaterials, software.amazon.cryptography.materialproviders.internaldafny.types._IError>);
       _397_valueOrError0 = (mpl).InitializeDecryptionMaterials(software.amazon.cryptography.materialproviders.internaldafny.types.InitializeDecryptionMaterialsInput.create(((_395_encryptionMaterials).dtor_algorithmSuite).dtor_id, (_395_encryptionMaterials).dtor_encryptionContext, Dafny.Sequence<Dafny.ISequence<byte>>.FromElements()));
       if (!(!((_397_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/KeyringExpectations.dfy(68,30): " + _397_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/KeyringExpectations.dfy(68,30): " + _397_valueOrError0);}
       _396_decryptionMaterialsIn = (_397_valueOrError0).Extract();
       software.amazon.cryptography.materialproviders.internaldafny.types._IDecryptionMaterials _398_decryptionMaterials;
       software.amazon.cryptography.materialproviders.internaldafny.types._IDecryptionMaterials _out31;
       _out31 = KeyringExpectations_Compile.__default.ExpectOnDecryptSuccess(mpl, keyring, _396_decryptionMaterialsIn, (_395_encryptionMaterials).dtor_encryptedDataKeys);
       _398_decryptionMaterials = _out31;
       if (!(object.Equals((_395_encryptionMaterials).dtor_plaintextDataKey, (_398_decryptionMaterials).dtor_plaintextDataKey))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/KeyringExpectations.dfy(85,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/KeyringExpectations.dfy(85,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       results = KeyringExpectations_Compile.Materials.create(_395_encryptionMaterials, _398_decryptionMaterials);
       return results;
     }
@@ -6626,23 +6626,23 @@ namespace KeyringExpectations_Compile {
       _out32 = (keyring).OnEncrypt(software.amazon.cryptography.materialproviders.internaldafny.types.OnEncryptInput.create(encryptionMaterialsIn));
       _400_valueOrError0 = _out32;
       if (!(!((_400_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/KeyringExpectations.dfy(110,31): " + _400_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/KeyringExpectations.dfy(110,31): " + _400_valueOrError0);}
       _399_encryptionMaterialsOut = (_400_valueOrError0).Extract();
       encryptionMaterials = (_399_encryptionMaterialsOut).dtor_materials;
       _System._ITuple0 _401___v1;
       Wrappers_Compile._IResult<_System._ITuple0, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _402_valueOrError1 = Wrappers_Compile.Result<_System._ITuple0, software.amazon.cryptography.materialproviders.internaldafny.types._IError>.Default(_System.Tuple0.Default());
       _402_valueOrError1 = (mpl).ValidEncryptionMaterialsTransition(software.amazon.cryptography.materialproviders.internaldafny.types.ValidEncryptionMaterialsTransitionInput.create(encryptionMaterialsIn, encryptionMaterials));
       if (!(!((_402_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/KeyringExpectations.dfy(117,10): " + _402_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/KeyringExpectations.dfy(117,10): " + _402_valueOrError1);}
       _401___v1 = (_402_valueOrError1).Extract();
       _System._ITuple0 _403___v2;
       Wrappers_Compile._IResult<_System._ITuple0, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _404_valueOrError2 = Wrappers_Compile.Result<_System._ITuple0, software.amazon.cryptography.materialproviders.internaldafny.types._IError>.Default(_System.Tuple0.Default());
       _404_valueOrError2 = (mpl).EncryptionMaterialsHasPlaintextDataKey(encryptionMaterials);
       if (!(!((_404_valueOrError2).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/KeyringExpectations.dfy(125,10): " + _404_valueOrError2);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/KeyringExpectations.dfy(125,10): " + _404_valueOrError2);}
       _403___v2 = (_404_valueOrError2).Extract();
       if (!((BigInteger.One) <= (new BigInteger((((_399_encryptionMaterialsOut).dtor_materials).dtor_encryptedDataKeys).Count)))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/KeyringExpectations.dfy(128,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/KeyringExpectations.dfy(128,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       return encryptionMaterials;
     }
     public static software.amazon.cryptography.materialproviders.internaldafny.types._IDecryptionMaterials ExpectOnDecryptSuccess(software.amazon.cryptography.materialproviders.internaldafny.types.IAwsCryptographicMaterialProvidersClient mpl, software.amazon.cryptography.materialproviders.internaldafny.types.IKeyring keyring, software.amazon.cryptography.materialproviders.internaldafny.types._IDecryptionMaterials decryptionMaterialsIn, Dafny.ISequence<software.amazon.cryptography.materialproviders.internaldafny.types._IEncryptedDataKey> encryptedDataKeys)
@@ -6654,20 +6654,20 @@ namespace KeyringExpectations_Compile {
       _out33 = (keyring).OnDecrypt(software.amazon.cryptography.materialproviders.internaldafny.types.OnDecryptInput.create(decryptionMaterialsIn, encryptedDataKeys));
       _406_valueOrError0 = _out33;
       if (!(!((_406_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/KeyringExpectations.dfy(152,31): " + _406_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/KeyringExpectations.dfy(152,31): " + _406_valueOrError0);}
       _405_decryptionMaterialsOut = (_406_valueOrError0).Extract();
       decryptionMaterials = (_405_decryptionMaterialsOut).dtor_materials;
       _System._ITuple0 _407___v3;
       Wrappers_Compile._IResult<_System._ITuple0, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _408_valueOrError1 = Wrappers_Compile.Result<_System._ITuple0, software.amazon.cryptography.materialproviders.internaldafny.types._IError>.Default(_System.Tuple0.Default());
       _408_valueOrError1 = (mpl).ValidDecryptionMaterialsTransition(software.amazon.cryptography.materialproviders.internaldafny.types.ValidDecryptionMaterialsTransitionInput.create(decryptionMaterialsIn, decryptionMaterials));
       if (!(!((_408_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/KeyringExpectations.dfy(162,10): " + _408_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/KeyringExpectations.dfy(162,10): " + _408_valueOrError1);}
       _407___v3 = (_408_valueOrError1).Extract();
       _System._ITuple0 _409___v4;
       Wrappers_Compile._IResult<_System._ITuple0, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _410_valueOrError2 = Wrappers_Compile.Result<_System._ITuple0, software.amazon.cryptography.materialproviders.internaldafny.types._IError>.Default(_System.Tuple0.Default());
       _410_valueOrError2 = (mpl).DecryptionMaterialsWithPlaintextDataKey(decryptionMaterials);
       if (!(!((_410_valueOrError2).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/KeyringExpectations.dfy(170,10): " + _410_valueOrError2);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/KeyringExpectations.dfy(170,10): " + _410_valueOrError2);}
       _409___v4 = (_410_valueOrError2).Extract();
       return decryptionMaterials;
     }
@@ -6706,7 +6706,7 @@ namespace CreateAwsKmsKeyrings_Compile {
       _out35 = software.amazon.cryptography.materialproviders.internaldafny.wrapped.__default.WrappedMaterialProviders(software.amazon.cryptography.materialproviders.internaldafny.wrapped.__default.WrappedDefaultMaterialProvidersConfig());
       _416_valueOrError0 = _out35;
       if (!(!((_416_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsKeyrings.dfy(53,12): " + _416_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsKeyrings.dfy(53,12): " + _416_valueOrError0);}
       _415_mpl = (_416_valueOrError0).Extract();
       software.amazon.cryptography.materialproviders.internaldafny.types.IClientSupplier _417_clientSupplier;
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IClientSupplier, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _418_valueOrError1 = default(Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IClientSupplier, software.amazon.cryptography.materialproviders.internaldafny.types._IError>);
@@ -6714,7 +6714,7 @@ namespace CreateAwsKmsKeyrings_Compile {
       _out36 = (_415_mpl).CreateDefaultClientSupplier(software.amazon.cryptography.materialproviders.internaldafny.types.CreateDefaultClientSupplierInput.create());
       _418_valueOrError1 = _out36;
       if (!(!((_418_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsKeyrings.dfy(55,23): " + _418_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsKeyrings.dfy(55,23): " + _418_valueOrError1);}
       _417_clientSupplier = (_418_valueOrError1).Extract();
       software.amazon.cryptography.services.kms.internaldafny.types.IKMSClient _419_kmsClient;
       Wrappers_Compile._IResult<software.amazon.cryptography.services.kms.internaldafny.types.IKMSClient, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _420_valueOrError2 = default(Wrappers_Compile._IResult<software.amazon.cryptography.services.kms.internaldafny.types.IKMSClient, software.amazon.cryptography.materialproviders.internaldafny.types._IError>);
@@ -6722,14 +6722,14 @@ namespace CreateAwsKmsKeyrings_Compile {
       _out37 = (_417_clientSupplier).GetClient(software.amazon.cryptography.materialproviders.internaldafny.types.GetClientInput.create(region));
       _420_valueOrError2 = _out37;
       if (!(!((_420_valueOrError2).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsKeyrings.dfy(56,18): " + _420_valueOrError2);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsKeyrings.dfy(56,18): " + _420_valueOrError2);}
       _419_kmsClient = (_420_valueOrError2).Extract();
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IKeyring, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _421_valueOrError3 = default(Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IKeyring, software.amazon.cryptography.materialproviders.internaldafny.types._IError>);
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IKeyring, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _out38;
       _out38 = (_415_mpl).CreateAwsKmsKeyring(software.amazon.cryptography.materialproviders.internaldafny.types.CreateAwsKmsKeyringInput.create(kmsKeyId, _419_kmsClient, Wrappers_Compile.Option<Dafny.ISequence<Dafny.ISequence<char>>>.create_None()));
       _421_valueOrError3 = _out38;
       if (!(!((_421_valueOrError3).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsKeyrings.dfy(58,12): " + _421_valueOrError3);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsKeyrings.dfy(58,12): " + _421_valueOrError3);}
       keyring = (_421_valueOrError3).Extract();
       return keyring;
     }
@@ -6768,14 +6768,14 @@ namespace CreateAwsKmsMultiKeyrings_Compile {
       _out40 = software.amazon.cryptography.materialproviders.internaldafny.wrapped.__default.WrappedMaterialProviders(software.amazon.cryptography.materialproviders.internaldafny.wrapped.__default.WrappedDefaultMaterialProvidersConfig());
       _427_valueOrError0 = _out40;
       if (!(!((_427_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsMultiKeyrings.dfy(53,12): " + _427_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsMultiKeyrings.dfy(53,12): " + _427_valueOrError0);}
       _426_mpl = (_427_valueOrError0).Extract();
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IKeyring, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _428_valueOrError1 = default(Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IKeyring, software.amazon.cryptography.materialproviders.internaldafny.types._IError>);
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IKeyring, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _out41;
       _out41 = (_426_mpl).CreateAwsKmsMultiKeyring(software.amazon.cryptography.materialproviders.internaldafny.types.CreateAwsKmsMultiKeyringInput.create(kmsKeyId, kmsKeyIds, Wrappers_Compile.Option<software.amazon.cryptography.materialproviders.internaldafny.types.IClientSupplier>.create_None(), Wrappers_Compile.Option<Dafny.ISequence<Dafny.ISequence<char>>>.create_None()));
       _428_valueOrError1 = _out41;
       if (!(!((_428_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsMultiKeyrings.dfy(55,12): " + _428_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsMultiKeyrings.dfy(55,12): " + _428_valueOrError1);}
       keyring = (_428_valueOrError1).Extract();
       return keyring;
     }
@@ -6814,7 +6814,7 @@ namespace CreateAwsKmsMrkKeyrings_Compile {
       _out43 = software.amazon.cryptography.materialproviders.internaldafny.wrapped.__default.WrappedMaterialProviders(software.amazon.cryptography.materialproviders.internaldafny.wrapped.__default.WrappedDefaultMaterialProvidersConfig());
       _434_valueOrError0 = _out43;
       if (!(!((_434_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsMrkKeyrings.dfy(53,12): " + _434_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsMrkKeyrings.dfy(53,12): " + _434_valueOrError0);}
       _433_mpl = (_434_valueOrError0).Extract();
       software.amazon.cryptography.materialproviders.internaldafny.types.IClientSupplier _435_clientSupplier;
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IClientSupplier, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _436_valueOrError1 = default(Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IClientSupplier, software.amazon.cryptography.materialproviders.internaldafny.types._IError>);
@@ -6822,7 +6822,7 @@ namespace CreateAwsKmsMrkKeyrings_Compile {
       _out44 = (_433_mpl).CreateDefaultClientSupplier(software.amazon.cryptography.materialproviders.internaldafny.types.CreateDefaultClientSupplierInput.create());
       _436_valueOrError1 = _out44;
       if (!(!((_436_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsMrkKeyrings.dfy(55,23): " + _436_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsMrkKeyrings.dfy(55,23): " + _436_valueOrError1);}
       _435_clientSupplier = (_436_valueOrError1).Extract();
       software.amazon.cryptography.services.kms.internaldafny.types.IKMSClient _437_kmsClient;
       Wrappers_Compile._IResult<software.amazon.cryptography.services.kms.internaldafny.types.IKMSClient, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _438_valueOrError2 = default(Wrappers_Compile._IResult<software.amazon.cryptography.services.kms.internaldafny.types.IKMSClient, software.amazon.cryptography.materialproviders.internaldafny.types._IError>);
@@ -6830,14 +6830,14 @@ namespace CreateAwsKmsMrkKeyrings_Compile {
       _out45 = (_435_clientSupplier).GetClient(software.amazon.cryptography.materialproviders.internaldafny.types.GetClientInput.create(region));
       _438_valueOrError2 = _out45;
       if (!(!((_438_valueOrError2).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsMrkKeyrings.dfy(56,18): " + _438_valueOrError2);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsMrkKeyrings.dfy(56,18): " + _438_valueOrError2);}
       _437_kmsClient = (_438_valueOrError2).Extract();
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IKeyring, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _439_valueOrError3 = default(Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IKeyring, software.amazon.cryptography.materialproviders.internaldafny.types._IError>);
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IKeyring, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _out46;
       _out46 = (_433_mpl).CreateAwsKmsMrkKeyring(software.amazon.cryptography.materialproviders.internaldafny.types.CreateAwsKmsMrkKeyringInput.create(kmsKeyId, _437_kmsClient, Wrappers_Compile.Option<Dafny.ISequence<Dafny.ISequence<char>>>.create_None()));
       _439_valueOrError3 = _out46;
       if (!(!((_439_valueOrError3).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsMrkKeyrings.dfy(58,12): " + _439_valueOrError3);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsMrkKeyrings.dfy(58,12): " + _439_valueOrError3);}
       keyring = (_439_valueOrError3).Extract();
       return keyring;
     }
@@ -6876,14 +6876,14 @@ namespace CreateAwsKmsMrkMultiKeyrings_Compile {
       _out48 = software.amazon.cryptography.materialproviders.internaldafny.wrapped.__default.WrappedMaterialProviders(software.amazon.cryptography.materialproviders.internaldafny.wrapped.__default.WrappedDefaultMaterialProvidersConfig());
       _445_valueOrError0 = _out48;
       if (!(!((_445_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsMrkMultiKeyrings.dfy(53,12): " + _445_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsMrkMultiKeyrings.dfy(53,12): " + _445_valueOrError0);}
       _444_mpl = (_445_valueOrError0).Extract();
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IKeyring, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _446_valueOrError1 = default(Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IKeyring, software.amazon.cryptography.materialproviders.internaldafny.types._IError>);
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IKeyring, software.amazon.cryptography.materialproviders.internaldafny.types._IError> _out49;
       _out49 = (_444_mpl).CreateAwsKmsMrkMultiKeyring(software.amazon.cryptography.materialproviders.internaldafny.types.CreateAwsKmsMrkMultiKeyringInput.create(kmsKeyId, kmsKeyIds, Wrappers_Compile.Option<software.amazon.cryptography.materialproviders.internaldafny.types.IClientSupplier>.create_None(), Wrappers_Compile.Option<Dafny.ISequence<Dafny.ISequence<char>>>.create_None()));
       _446_valueOrError1 = _out49;
       if (!(!((_446_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsMrkMultiKeyrings.dfy(55,12): " + _446_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateAwsKmsMrkMultiKeyrings.dfy(55,12): " + _446_valueOrError1);}
       keyring = (_446_valueOrError1).Extract();
       return keyring;
     }
@@ -6937,7 +6937,7 @@ namespace CreateRawAesKeyrings_Compile {
       _out51 = software.amazon.cryptography.materialproviders.internaldafny.wrapped.__default.WrappedMaterialProviders(software.amazon.cryptography.materialproviders.internaldafny.wrapped.__default.WrappedDefaultMaterialProvidersConfig());
       _452_valueOrError0 = _out51;
       if (!(!((_452_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateRawAesKeyrings.dfy(59,12): " + _452_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateRawAesKeyrings.dfy(59,12): " + _452_valueOrError0);}
       _451_mpl = (_452_valueOrError0).Extract();
       software.amazon.cryptography.primitives.internaldafny.AtomicPrimitivesClient _453_crypto;
       Wrappers_Compile._IResult<software.amazon.cryptography.primitives.internaldafny.AtomicPrimitivesClient, software.amazon.cryptography.primitives.internaldafny.types._IError> _454_valueOrError1 = default(Wrappers_Compile._IResult<software.amazon.cryptography.primitives.internaldafny.AtomicPrimitivesClient, software.amazon.cryptography.primitives.internaldafny.types._IError>);
@@ -6945,7 +6945,7 @@ namespace CreateRawAesKeyrings_Compile {
       _out52 = software.amazon.cryptography.primitives.internaldafny.__default.AtomicPrimitives(software.amazon.cryptography.primitives.internaldafny.__default.DefaultCryptoConfig());
       _454_valueOrError1 = _out52;
       if (!(!((_454_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateRawAesKeyrings.dfy(60,15): " + _454_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateRawAesKeyrings.dfy(60,15): " + _454_valueOrError1);}
       _453_crypto = (_454_valueOrError1).Extract();
       int _455_length;
       _455_length = ((System.Func<software.amazon.cryptography.materialproviders.internaldafny.types._IAesWrappingAlg, int>)((_source13) => {
@@ -6963,7 +6963,7 @@ namespace CreateRawAesKeyrings_Compile {
       _out53 = (_453_crypto).GenerateRandomBytes(software.amazon.cryptography.primitives.internaldafny.types.GenerateRandomBytesInput.create(_455_length));
       _457_valueOrError2 = _out53;
       if (!(!((_457_valueOrError2).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateRawAesKeyrings.dfy(67,20): " + _457_valueOrError2);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateRawAesKeyrings.dfy(67,20): " + _457_valueOrError2);}
       _456_wrappingKey = (_457_valueOrError2).Extract();
       Dafny.ISequence<char> _458_namespace;
       Dafny.ISequence<char> _459_name;
@@ -6977,7 +6977,7 @@ namespace CreateRawAesKeyrings_Compile {
       _out56 = (_451_mpl).CreateRawAesKeyring(software.amazon.cryptography.materialproviders.internaldafny.types.CreateRawAesKeyringInput.create(_458_namespace, _459_name, _456_wrappingKey, wrappingAlg));
       _460_valueOrError3 = _out56;
       if (!(!((_460_valueOrError3).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateRawAesKeyrings.dfy(74,12): " + _460_valueOrError3);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateRawAesKeyrings.dfy(74,12): " + _460_valueOrError3);}
       keyring = (_460_valueOrError3).Extract();
       return keyring;
     }
@@ -7029,7 +7029,7 @@ namespace CreateRawRsaKeyrings_Compile {
       _out58 = software.amazon.cryptography.materialproviders.internaldafny.wrapped.__default.WrappedMaterialProviders(software.amazon.cryptography.materialproviders.internaldafny.wrapped.__default.WrappedDefaultMaterialProvidersConfig());
       _466_valueOrError0 = _out58;
       if (!(!((_466_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateRawRsaKeyrings.dfy(56,12): " + _466_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateRawRsaKeyrings.dfy(56,12): " + _466_valueOrError0);}
       _465_mpl = (_466_valueOrError0).Extract();
       software.amazon.cryptography.primitives.internaldafny.AtomicPrimitivesClient _467_crypto;
       Wrappers_Compile._IResult<software.amazon.cryptography.primitives.internaldafny.AtomicPrimitivesClient, software.amazon.cryptography.primitives.internaldafny.types._IError> _468_valueOrError1 = default(Wrappers_Compile._IResult<software.amazon.cryptography.primitives.internaldafny.AtomicPrimitivesClient, software.amazon.cryptography.primitives.internaldafny.types._IError>);
@@ -7037,7 +7037,7 @@ namespace CreateRawRsaKeyrings_Compile {
       _out59 = software.amazon.cryptography.primitives.internaldafny.__default.AtomicPrimitives(software.amazon.cryptography.primitives.internaldafny.__default.DefaultCryptoConfig());
       _468_valueOrError1 = _out59;
       if (!(!((_468_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateRawRsaKeyrings.dfy(57,15): " + _468_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateRawRsaKeyrings.dfy(57,15): " + _468_valueOrError1);}
       _467_crypto = (_468_valueOrError1).Extract();
       software.amazon.cryptography.primitives.internaldafny.types._IGenerateRSAKeyPairOutput _469_keys;
       Wrappers_Compile._IResult<software.amazon.cryptography.primitives.internaldafny.types._IGenerateRSAKeyPairOutput, software.amazon.cryptography.primitives.internaldafny.types._IError> _470_valueOrError2 = default(Wrappers_Compile._IResult<software.amazon.cryptography.primitives.internaldafny.types._IGenerateRSAKeyPairOutput, software.amazon.cryptography.primitives.internaldafny.types._IError>);
@@ -7045,7 +7045,7 @@ namespace CreateRawRsaKeyrings_Compile {
       _out60 = (_467_crypto).GenerateRSAKeyPair(software.amazon.cryptography.primitives.internaldafny.types.GenerateRSAKeyPairInput.create(2048));
       _470_valueOrError2 = _out60;
       if (!(!((_470_valueOrError2).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateRawRsaKeyrings.dfy(59,13): " + _470_valueOrError2);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateRawRsaKeyrings.dfy(59,13): " + _470_valueOrError2);}
       _469_keys = (_470_valueOrError2).Extract();
       Dafny.ISequence<char> _471_namespace;
       Dafny.ISequence<char> _472_name;
@@ -7059,7 +7059,7 @@ namespace CreateRawRsaKeyrings_Compile {
       _out63 = (_465_mpl).CreateRawRsaKeyring(software.amazon.cryptography.materialproviders.internaldafny.types.CreateRawRsaKeyringInput.create(_471_namespace, _472_name, paddingScheme, Wrappers_Compile.Option<Dafny.ISequence<byte>>.create_Some(((_469_keys).dtor_publicKey).dtor_pem), Wrappers_Compile.Option<Dafny.ISequence<byte>>.create_Some(((_469_keys).dtor_privateKey).dtor_pem)));
       _473_valueOrError3 = _out63;
       if (!(!((_473_valueOrError3).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateRawRsaKeyrings.dfy(66,12): " + _473_valueOrError3);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CreateKeyrings/CreateRawRsaKeyrings.dfy(66,12): " + _473_valueOrError3);}
       keyring = (_473_valueOrError3).Extract();
       return keyring;
     }
@@ -7954,7 +7954,7 @@ namespace TestVectors_Compile {
       _out72 = software.amazon.cryptography.materialproviders.internaldafny.wrapped.__default.WrappedMaterialProviders(software.amazon.cryptography.materialproviders.internaldafny.wrapped.__default.WrappedDefaultMaterialProvidersConfig());
       _550_valueOrError0 = _out72;
       if (!(!((_550_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectors.dfy(131,12): " + _550_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectors.dfy(131,12): " + _550_valueOrError0);}
       _549_mpl = (_550_valueOrError0).Extract();
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IKeyring, software.amazon.cryptography.materialproviderstestvectorkeys.internaldafny.types._IError> _551_maybeKeyring;
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IKeyring, software.amazon.cryptography.materialproviderstestvectorkeys.internaldafny.types._IError> _out73;
@@ -8003,7 +8003,7 @@ namespace TestVectors_Compile {
       _out75 = software.amazon.cryptography.materialproviders.internaldafny.wrapped.__default.WrappedMaterialProviders(software.amazon.cryptography.materialproviders.internaldafny.wrapped.__default.WrappedDefaultMaterialProvidersConfig());
       _564_valueOrError0 = _out75;
       if (!(!((_564_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectors.dfy(196,12): " + _564_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestVectors.dfy(196,12): " + _564_valueOrError0);}
       _563_mpl = (_564_valueOrError0).Extract();
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IKeyring, software.amazon.cryptography.materialproviderstestvectorkeys.internaldafny.types._IError> _565_maybeKeyring;
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviders.internaldafny.types.IKeyring, software.amazon.cryptography.materialproviderstestvectorkeys.internaldafny.types._IError> _out76;
@@ -8155,7 +8155,7 @@ namespace CompleteVectors_Compile {
         _out78 = UUID.__default.GenerateUUID();
         _580_valueOrError0 = _out78;
         if (!(!((_580_valueOrError0).IsFailure()))) {
-          throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CompleteVectors.dfy(281,15): " + _580_valueOrError0);}
+          throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CompleteVectors.dfy(281,15): " + _580_valueOrError0);}
         _579_name = (_580_valueOrError0).Extract();
         _577_testsJSON = Dafny.Sequence<_System._ITuple2<Dafny.ISequence<char>, JSON_mValues_Compile._IJSON>>.Concat(_577_testsJSON, Dafny.Sequence<_System._ITuple2<Dafny.ISequence<char>, JSON_mValues_Compile._IJSON>>.FromElements(_System.Tuple2<Dafny.ISequence<char>, JSON_mValues_Compile._IJSON>.create(_579_name, (_576_tests).Select(_578_i))));
       }
@@ -8165,7 +8165,7 @@ namespace CompleteVectors_Compile {
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, JSON_mErrors_Compile._ISerializationError> _583_valueOrError1 = Wrappers_Compile.Result<Dafny.ISequence<byte>, JSON_mErrors_Compile._ISerializationError>.Default(Dafny.Sequence<byte>.Empty);
       _583_valueOrError1 = JSON_mAPI_Compile.__default.Serialize(_581_mplEncryptManifies);
       if (!(!((_583_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CompleteVectors.dfy(290,32): " + _583_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CompleteVectors.dfy(290,32): " + _583_valueOrError1);}
       _582_mplEncryptManifiesBytes = (_583_valueOrError1).Extract();
       Dafny.ISequence<byte> _584_mplEncryptManifiesBv;
       _584_mplEncryptManifiesBv = JSONHelpers_Compile.__default.BytesBv(_582_mplEncryptManifiesBytes);
@@ -8175,7 +8175,7 @@ namespace CompleteVectors_Compile {
       _out79 = FileIO_Compile.__default.WriteBytesToFile(Dafny.Sequence<char>.FromString("dafny/TestVectorsAwsCryptographicMaterialProviders/test/test.json"), _584_mplEncryptManifiesBv);
       _586_valueOrError2 = _out79;
       if (!(!((_586_valueOrError2).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CompleteVectors.dfy(293,10): " + _586_valueOrError2);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/CompleteVectors.dfy(293,10): " + _586_valueOrError2);}
       _585___v3 = (_586_valueOrError2).Extract();
     }
     public static Dafny.ISet<software.amazon.cryptography.materialproviders.internaldafny.types._IAlgorithmSuiteInfo> ESDKAlgorithmSuites { get {
@@ -8639,7 +8639,7 @@ namespace TestManifests_Compile {
       _out80 = FileIO_Compile.__default.ReadBytesFromFile(encryptManifestPath);
       _687_valueOrError0 = _out80;
       if (!(!((_687_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(28,26): " + _687_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(28,26): " + _687_valueOrError0);}
       _686_encryptManifestBv = (_687_valueOrError0).Extract();
       Dafny.ISequence<byte> _688_encryptManifestBytes;
       _688_encryptManifestBytes = JSONHelpers_Compile.__default.BvToBytes(_686_encryptManifestBv);
@@ -8647,29 +8647,29 @@ namespace TestManifests_Compile {
       Wrappers_Compile._IResult<JSON_mValues_Compile._IJSON, JSON_mErrors_Compile._IDeserializationError> _690_valueOrError1 = Wrappers_Compile.Result<JSON_mValues_Compile._IJSON, JSON_mErrors_Compile._IDeserializationError>.Default(JSON_mValues_Compile.JSON.Default());
       _690_valueOrError1 = JSON_mAPI_Compile.__default.Deserialize(_688_encryptManifestBytes);
       if (!(!((_690_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(30,28): " + _690_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(30,28): " + _690_valueOrError1);}
       _689_encryptManifestJSON = (_690_valueOrError1).Extract();
       if (!((_689_encryptManifestJSON).is_Object)) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(31,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(31,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       software.amazon.cryptography.materialproviderstestvectorkeys.internaldafny.KeyVectorsClient _691_keys;
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviderstestvectorkeys.internaldafny.KeyVectorsClient, software.amazon.cryptography.materialproviderstestvectorkeys.internaldafny.types._IError> _692_valueOrError2 = default(Wrappers_Compile._IResult<software.amazon.cryptography.materialproviderstestvectorkeys.internaldafny.KeyVectorsClient, software.amazon.cryptography.materialproviderstestvectorkeys.internaldafny.types._IError>);
       Wrappers_Compile._IResult<software.amazon.cryptography.materialproviderstestvectorkeys.internaldafny.KeyVectorsClient, software.amazon.cryptography.materialproviderstestvectorkeys.internaldafny.types._IError> _out81;
       _out81 = software.amazon.cryptography.materialproviderstestvectorkeys.internaldafny.__default.KeyVectors(software.amazon.cryptography.materialproviderstestvectorkeys.internaldafny.types.KeyVectorsConfig.create(keysManifiestPath));
       _692_valueOrError2 = _out81;
       if (!(!((_692_valueOrError2).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(33,13): " + _692_valueOrError2);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(33,13): " + _692_valueOrError2);}
       _691_keys = (_692_valueOrError2).Extract();
       Dafny.ISequence<_System._ITuple2<Dafny.ISequence<char>, JSON_mValues_Compile._IJSON>> _693_jsonTests;
       Wrappers_Compile._IResult<Dafny.ISequence<_System._ITuple2<Dafny.ISequence<char>, JSON_mValues_Compile._IJSON>>, Dafny.ISequence<char>> _694_valueOrError3 = Wrappers_Compile.Result<Dafny.ISequence<_System._ITuple2<Dafny.ISequence<char>, JSON_mValues_Compile._IJSON>>, Dafny.ISequence<char>>.Default(Dafny.Sequence<_System._ITuple2<Dafny.ISequence<char>, JSON_mValues_Compile._IJSON>>.Empty);
       _694_valueOrError3 = JSONHelpers_Compile.__default.GetObject(Dafny.Sequence<char>.FromString("tests"), (_689_encryptManifestJSON).dtor_obj);
       if (!(!((_694_valueOrError3).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(37,18): " + _694_valueOrError3);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(37,18): " + _694_valueOrError3);}
       _693_jsonTests = (_694_valueOrError3).Extract();
       Dafny.ISequence<TestVectors_Compile._IEncryptTestVector> _695_encryptVectors;
       Wrappers_Compile._IResult<Dafny.ISequence<TestVectors_Compile._IEncryptTestVector>, Dafny.ISequence<char>> _696_valueOrError4 = Wrappers_Compile.Result<Dafny.ISequence<TestVectors_Compile._IEncryptTestVector>, Dafny.ISequence<char>>.Default(Dafny.Sequence<TestVectors_Compile._IEncryptTestVector>.Empty);
       _696_valueOrError4 = ParseJsonManifests_Compile.__default.BuildEncryptTestVector(_691_keys, _693_jsonTests);
       if (!(!((_696_valueOrError4).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(38,23): " + _696_valueOrError4);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(38,23): " + _696_valueOrError4);}
       _695_encryptVectors = (_696_valueOrError4).Extract();
       Dafny.ISequence<TestVectors_Compile._IEncryptTest> _697_encryptTests;
       Wrappers_Compile._IResult<Dafny.ISequence<TestVectors_Compile._IEncryptTest>, Dafny.ISequence<char>> _698_valueOrError5 = Wrappers_Compile.Result<Dafny.ISequence<TestVectors_Compile._IEncryptTest>, Dafny.ISequence<char>>.Default(Dafny.Sequence<TestVectors_Compile._IEncryptTest>.Empty);
@@ -8677,7 +8677,7 @@ namespace TestManifests_Compile {
       _out82 = TestManifests_Compile.__default.ToEncryptTests(_691_keys, _695_encryptVectors);
       _698_valueOrError5 = _out82;
       if (!(!((_698_valueOrError5).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(40,21): " + _698_valueOrError5);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(40,21): " + _698_valueOrError5);}
       _697_encryptTests = (_698_valueOrError5).Extract();
       Dafny.ISequence<TestVectors_Compile._IDecryptTest> _699_decryptTests;
       Dafny.ISequence<TestVectors_Compile._IDecryptTest> _out83;
@@ -8715,13 +8715,13 @@ namespace TestManifests_Compile {
       }
       Dafny.Helpers.Print((Dafny.Sequence<char>.FromString("\n=================== Completed Encrypt Tests =================== \n\n")));
       if (!(!(_701_hasFailure))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(79,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(79,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       Wrappers_Compile._IResult<Dafny.ISequence<TestVectors_Compile._IDecryptTest>, Dafny.ISequence<char>> _707_valueOrError0 = Wrappers_Compile.Result<Dafny.ISequence<TestVectors_Compile._IDecryptTest>, Dafny.ISequence<char>>.Default(Dafny.Sequence<TestVectors_Compile._IDecryptTest>.Empty);
       Wrappers_Compile._IResult<Dafny.ISequence<TestVectors_Compile._IDecryptTest>, Dafny.ISequence<char>> _out87;
       _out87 = TestManifests_Compile.__default.ToDecryptTests(keys, _702_decryptableTests);
       _707_valueOrError0 = _out87;
       if (!(!((_707_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(80,11): " + _707_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(80,11): " + _707_valueOrError0);}
       output = (_707_valueOrError0).Extract();
       return output;
     }
@@ -8743,7 +8743,7 @@ namespace TestManifests_Compile {
       }
       Dafny.Helpers.Print((Dafny.Sequence<char>.FromString("\n=================== Completed Decrypt Tests =================== \n\n")));
       if (!(!(_708_hasFailure))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(104,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/TestManifests.dfy(104,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       manifest = TestManifests_Compile.__default.ToJSONDecryptManifiest(tests);
       return manifest;
     }
@@ -8813,7 +8813,7 @@ namespace WrappedMaterialProvidersMain_Compile {
       _out91 = software.amazon.cryptography.materialproviders.internaldafny.wrapped.__default.WrappedMaterialProviders(software.amazon.cryptography.materialproviders.internaldafny.wrapped.__default.WrappedDefaultMaterialProvidersConfig());
       _722_valueOrError0 = _out91;
       if (!(!((_722_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/Index.dfy(21,12): " + _722_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/TestVectorsAwsCryptographicMaterialProviders/dafny/TestVectorsAwsCryptographicMaterialProviders/src/Index.dfy(21,12): " + _722_valueOrError0);}
       _721_mpl = (_722_valueOrError0).Extract();
       Dafny.ISequence<software.amazon.cryptography.materialproviders.internaldafny.types.IKeyring> _723_all;
       Dafny.ISequence<software.amazon.cryptography.materialproviders.internaldafny.types.IKeyring> _out92;

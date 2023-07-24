@@ -9,7 +9,7 @@ using System;
 using System.Numerics;
 using System.Collections;
 [assembly: DafnyAssembly.DafnySourceAttribute(@"// dafny 4.1.0.0
-// Command Line Options: -stdin -noVerify -vcsCores:2 -compileTarget:cs -spillTargetCode:3 -runAllTests:1 -compile:0 -optimizeErasableDatatypeWrapper:0 -quantifierSyntax:3 -unicodeChar:0 -functionSyntax:3 -useRuntimeLib -out runtimes/net/tests/TestsFromDafny -library:/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/StandardLibrary/src/Index.dfy -library:src/Index.dfy
+// Command Line Options: -stdin -noVerify -vcsCores:2 -compileTarget:cs -spillTargetCode:3 -runAllTests:1 -compile:0 -optimizeErasableDatatypeWrapper:0 -quantifierSyntax:3 -unicodeChar:0 -functionSyntax:3 -useRuntimeLib -out runtimes/net/tests/TestsFromDafny -library:/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/StandardLibrary/src/Index.dfy -library:src/Index.dfy
 // the_program
 
 method {:verify false} {:main} _Test__Main_()
@@ -760,36 +760,36 @@ namespace TestAwsCryptographyPrimitivesAesKdfCtr_Compile {
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError> _4_valueOrError0 = Wrappers_Compile.Result<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError>.Default(Dafny.Sequence<byte>.Empty);
       _4_valueOrError0 = AesKdfCtr.__default.AesKdfCtrStream(_1_nonce, _0_key, 44U);
       if (!(!((_4_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAesKdfCtr.dfy(18,15): " + _4_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAesKdfCtr.dfy(18,15): " + _4_valueOrError0);}
       _3_result = (_4_valueOrError0).Extract();
       if (!((new BigInteger((_3_result).Count)) == (new BigInteger(44)))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAesKdfCtr.dfy(19,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAesKdfCtr.dfy(19,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!((_2_goal).Equals(_3_result))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAesKdfCtr.dfy(20,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAesKdfCtr.dfy(20,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       _0_key = Dafny.Sequence<byte>.FromElements((byte)(212), (byte)(191), (byte)(10), (byte)(32), (byte)(13), (byte)(55), (byte)(22), (byte)(101), (byte)(189), (byte)(182), (byte)(186), (byte)(119), (byte)(202), (byte)(16), (byte)(175), (byte)(49), (byte)(103), (byte)(82), (byte)(87), (byte)(190), (byte)(13), (byte)(142), (byte)(103), (byte)(201), (byte)(98), (byte)(84), (byte)(228), (byte)(47), (byte)(142), (byte)(96), (byte)(61), (byte)(167));
       _1_nonce = Dafny.Sequence<byte>.FromElements((byte)(135), (byte)(1), (byte)(132), (byte)(66), (byte)(198), (byte)(216), (byte)(26), (byte)(105), (byte)(47), (byte)(97), (byte)(246), (byte)(192), (byte)(186), (byte)(187), (byte)(54), (byte)(129));
       _2_goal = Dafny.Sequence<byte>.FromElements((byte)(11), (byte)(154), (byte)(37), (byte)(42), (byte)(116), (byte)(143), (byte)(238), (byte)(68), (byte)(62), (byte)(135), (byte)(225), (byte)(71), (byte)(98), (byte)(224), (byte)(135), (byte)(18));
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError> _5_valueOrError1 = Wrappers_Compile.Result<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError>.Default(Dafny.Sequence<byte>.Empty);
       _5_valueOrError1 = AesKdfCtr.__default.AesKdfCtrStream(_1_nonce, _0_key, 16U);
       if (!(!((_5_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAesKdfCtr.dfy(25,11): " + _5_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAesKdfCtr.dfy(25,11): " + _5_valueOrError1);}
       _3_result = (_5_valueOrError1).Extract();
       if (!((new BigInteger((_3_result).Count)) == (new BigInteger(16)))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAesKdfCtr.dfy(26,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAesKdfCtr.dfy(26,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!((_2_goal).Equals(_3_result))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAesKdfCtr.dfy(27,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAesKdfCtr.dfy(27,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       _0_key = Dafny.Sequence<byte>.FromElements((byte)(106), (byte)(72), (byte)(42), (byte)(47), (byte)(58), (byte)(213), (byte)(111), (byte)(196), (byte)(126), (byte)(37), (byte)(46), (byte)(203), (byte)(150), (byte)(153), (byte)(188), (byte)(53), (byte)(32), (byte)(194), (byte)(159), (byte)(196), (byte)(221), (byte)(90), (byte)(124), (byte)(70), (byte)(45), (byte)(252), (byte)(99), (byte)(98), (byte)(42), (byte)(68), (byte)(94), (byte)(19));
       _1_nonce = Dafny.Sequence<byte>.FromElements((byte)(13), (byte)(247), (byte)(32), (byte)(159), (byte)(220), (byte)(254), (byte)(69), (byte)(218), (byte)(42), (byte)(110), (byte)(159), (byte)(42), (byte)(209), (byte)(244), (byte)(79), (byte)(232));
       _2_goal = Dafny.Sequence<byte>.FromElements((byte)(150), (byte)(218), (byte)(139), (byte)(126), (byte)(166), (byte)(233), (byte)(178), (byte)(123), (byte)(229), (byte)(210), (byte)(40), (byte)(218), (byte)(141), (byte)(26), (byte)(127), (byte)(208), (byte)(124), (byte)(197), (byte)(212), (byte)(69), (byte)(251), (byte)(71), (byte)(73), (byte)(90), (byte)(47), (byte)(134), (byte)(46), (byte)(7), (byte)(215), (byte)(208), (byte)(194), (byte)(180), (byte)(174), (byte)(110), (byte)(1), (byte)(57), (byte)(16), (byte)(37), (byte)(16), (byte)(235), (byte)(93), (byte)(138), (byte)(25), (byte)(180), (byte)(85), (byte)(16), (byte)(229), (byte)(165), (byte)(238), (byte)(36), (byte)(56), (byte)(131), (byte)(247), (byte)(31), (byte)(64), (byte)(23), (byte)(249), (byte)(67), (byte)(153), (byte)(94), (byte)(23), (byte)(243), (byte)(69), (byte)(11));
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError> _6_valueOrError2 = Wrappers_Compile.Result<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError>.Default(Dafny.Sequence<byte>.Empty);
       _6_valueOrError2 = AesKdfCtr.__default.AesKdfCtrStream(_1_nonce, _0_key, 64U);
       if (!(!((_6_valueOrError2).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAesKdfCtr.dfy(32,11): " + _6_valueOrError2);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAesKdfCtr.dfy(32,11): " + _6_valueOrError2);}
       _3_result = (_6_valueOrError2).Extract();
       if (!((new BigInteger((_3_result).Count)) == (new BigInteger(64)))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAesKdfCtr.dfy(33,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAesKdfCtr.dfy(33,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!((_2_goal).Equals(_3_result))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAesKdfCtr.dfy(34,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAesKdfCtr.dfy(34,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
     }
   }
 } // end of namespace TestAwsCryptographyPrimitivesAesKdfCtr_Compile
@@ -804,7 +804,7 @@ namespace TestAwsCryptographyPrimitivesHMacDigest_Compile {
       _out0 = software.amazon.cryptography.primitives.internaldafny.__default.AtomicPrimitives(software.amazon.cryptography.primitives.internaldafny.__default.DefaultCryptoConfig());
       _8_valueOrError0 = _out0;
       if (!(!((_8_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestHMAC.dfy(14,15): " + _8_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestHMAC.dfy(14,15): " + _8_valueOrError0);}
       _7_client = (_8_valueOrError0).Extract();
       TestAwsCryptographyPrimitivesHMacDigest_Compile.__default.HmacSHA__256(_7_client);
       TestAwsCryptographyPrimitivesHMacDigest_Compile.__default.HmacSHA__384(_7_client);
@@ -816,7 +816,7 @@ namespace TestAwsCryptographyPrimitivesHMacDigest_Compile {
       Wrappers_Compile._IResult<_System._ITuple0, software.amazon.cryptography.primitives.internaldafny.types._IError> _10_valueOrError0 = Wrappers_Compile.Result<_System._ITuple0, software.amazon.cryptography.primitives.internaldafny.types._IError>.Default(_System.Tuple0.Default());
       _10_valueOrError0 = TestAwsCryptographyPrimitivesHMacDigest_Compile.__default.BasicHMacTest(client, software.amazon.cryptography.primitives.internaldafny.types.HMacInput.create(software.amazon.cryptography.primitives.internaldafny.types.DigestAlgorithm.create_SHA__256(), Dafny.Sequence<byte>.FromElements((byte)(1), (byte)(1), (byte)(1), (byte)(1)), Dafny.Sequence<byte>.FromElements((byte)(97), (byte)(115), (byte)(100), (byte)(102))), Dafny.Sequence<byte>.FromElements((byte)(93), (byte)(12), (byte)(86), (byte)(145), (byte)(123), (byte)(239), (byte)(169), (byte)(72), (byte)(195), (byte)(226), (byte)(204), (byte)(179), (byte)(103), (byte)(94), (byte)(195), (byte)(83), (byte)(134), (byte)(128), (byte)(226), (byte)(185), (byte)(184), (byte)(203), (byte)(98), (byte)(100), (byte)(115), (byte)(32), (byte)(7), (byte)(44), (byte)(172), (byte)(11), (byte)(81), (byte)(16)));
       if (!(!((_10_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestHMAC.dfy(26,10): " + _10_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestHMAC.dfy(26,10): " + _10_valueOrError0);}
       _9___v0 = (_10_valueOrError0).Extract();
     }
     public static void HmacSHA__384(software.amazon.cryptography.primitives.internaldafny.types.IAwsCryptographicPrimitivesClient client)
@@ -825,7 +825,7 @@ namespace TestAwsCryptographyPrimitivesHMacDigest_Compile {
       Wrappers_Compile._IResult<_System._ITuple0, software.amazon.cryptography.primitives.internaldafny.types._IError> _12_valueOrError0 = Wrappers_Compile.Result<_System._ITuple0, software.amazon.cryptography.primitives.internaldafny.types._IError>.Default(_System.Tuple0.Default());
       _12_valueOrError0 = TestAwsCryptographyPrimitivesHMacDigest_Compile.__default.BasicHMacTest(client, software.amazon.cryptography.primitives.internaldafny.types.HMacInput.create(software.amazon.cryptography.primitives.internaldafny.types.DigestAlgorithm.create_SHA__384(), Dafny.Sequence<byte>.FromElements((byte)(1), (byte)(1), (byte)(1), (byte)(1)), Dafny.Sequence<byte>.FromElements((byte)(97), (byte)(115), (byte)(100), (byte)(102))), Dafny.Sequence<byte>.FromElements((byte)(219), (byte)(44), (byte)(51), (byte)(60), (byte)(217), (byte)(57), (byte)(186), (byte)(208), (byte)(8), (byte)(69), (byte)(115), (byte)(185), (byte)(190), (byte)(136), (byte)(136), (byte)(1), (byte)(69), (byte)(143), (byte)(151), (byte)(148), (byte)(7), (byte)(66), (byte)(149), (byte)(193), (byte)(16), (byte)(225), (byte)(51), (byte)(85), (byte)(92), (byte)(176), (byte)(139), (byte)(249), (byte)(56), (byte)(93), (byte)(189), (byte)(11), (byte)(150), (byte)(21), (byte)(135), (byte)(54), (byte)(153), (byte)(37), (byte)(76), (byte)(68), (byte)(70), (byte)(77), (byte)(154), (byte)(124)));
       if (!(!((_12_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestHMAC.dfy(47,10): " + _12_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestHMAC.dfy(47,10): " + _12_valueOrError0);}
       _11___v1 = (_12_valueOrError0).Extract();
     }
     public static void HmacSHA__512(software.amazon.cryptography.primitives.internaldafny.types.IAwsCryptographicPrimitivesClient client)
@@ -834,7 +834,7 @@ namespace TestAwsCryptographyPrimitivesHMacDigest_Compile {
       Wrappers_Compile._IResult<_System._ITuple0, software.amazon.cryptography.primitives.internaldafny.types._IError> _14_valueOrError0 = Wrappers_Compile.Result<_System._ITuple0, software.amazon.cryptography.primitives.internaldafny.types._IError>.Default(_System.Tuple0.Default());
       _14_valueOrError0 = TestAwsCryptographyPrimitivesHMacDigest_Compile.__default.BasicHMacTest(client, software.amazon.cryptography.primitives.internaldafny.types.HMacInput.create(software.amazon.cryptography.primitives.internaldafny.types.DigestAlgorithm.create_SHA__512(), Dafny.Sequence<byte>.FromElements((byte)(1), (byte)(1), (byte)(1), (byte)(1)), Dafny.Sequence<byte>.FromElements((byte)(97), (byte)(115), (byte)(100), (byte)(102))), Dafny.Sequence<byte>.FromElements((byte)(49), (byte)(213), (byte)(21), (byte)(219), (byte)(23), (byte)(169), (byte)(195), (byte)(39), (byte)(177), (byte)(1), (byte)(15), (byte)(162), (byte)(233), (byte)(182), (byte)(208), (byte)(84), (byte)(226), (byte)(3), (byte)(27), (byte)(120), (byte)(75), (byte)(78), (byte)(85), (byte)(46), (byte)(220), (byte)(5), (byte)(166), (byte)(206), (byte)(79), (byte)(47), (byte)(25), (byte)(94), (byte)(88), (byte)(119), (byte)(211), (byte)(192), (byte)(148), (byte)(23), (byte)(252), (byte)(155), (byte)(98), (byte)(218), (byte)(97), (byte)(225), (byte)(38), (byte)(93), (byte)(83), (byte)(113), (byte)(139), (byte)(95), (byte)(101), (byte)(222), (byte)(154), (byte)(98), (byte)(244), (byte)(206), (byte)(88), (byte)(229), (byte)(6), (byte)(115), (byte)(226), (byte)(188), (byte)(152), (byte)(173)));
       if (!(!((_14_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestHMAC.dfy(69,10): " + _14_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestHMAC.dfy(69,10): " + _14_valueOrError0);}
       _13___v2 = (_14_valueOrError0).Extract();
     }
     public static Wrappers_Compile._IResult<_System._ITuple0, software.amazon.cryptography.primitives.internaldafny.types._IError> BasicHMacTest(software.amazon.cryptography.primitives.internaldafny.types.IAwsCryptographicPrimitivesClient client, software.amazon.cryptography.primitives.internaldafny.types._IHMacInput input, Dafny.ISequence<byte> expectedDigest)
@@ -876,7 +876,7 @@ namespace TestAwsCryptographyPrimitivesDigest_Compile {
       _out1 = software.amazon.cryptography.primitives.internaldafny.__default.AtomicPrimitives(software.amazon.cryptography.primitives.internaldafny.__default.DefaultCryptoConfig());
       _20_valueOrError0 = _out1;
       if (!(!((_20_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestDigest.dfy(61,15): " + _20_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestDigest.dfy(61,15): " + _20_valueOrError0);}
       _19_client = (_20_valueOrError0).Extract();
       software.amazon.cryptography.primitives.internaldafny.types._IDigestInput _21_input;
       _21_input = software.amazon.cryptography.primitives.internaldafny.types.DigestInput.create(digestAlgorithm, message);
@@ -886,12 +886,12 @@ namespace TestAwsCryptographyPrimitivesDigest_Compile {
       _out2 = (_19_client).Digest(_21_input);
       _23_valueOrError1 = _out2;
       if (!(!((_23_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestDigest.dfy(68,15): " + _23_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestDigest.dfy(68,15): " + _23_valueOrError1);}
       _22_output = (_23_valueOrError1).Extract();
       if (!((new BigInteger((_22_output).Count)) == (Digest_Compile.__default.Length(digestAlgorithm)))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestDigest.dfy(69,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestDigest.dfy(69,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!((_22_output).Equals(expectedDigest))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestDigest.dfy(70,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestDigest.dfy(70,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
     }
   }
 } // end of namespace TestAwsCryptographyPrimitivesDigest_Compile
@@ -912,7 +912,7 @@ namespace TestAwsCryptographyPrimitivesHMAC_Compile {
       _out3 = software.amazon.cryptography.primitives.internaldafny.__default.AtomicPrimitives(software.amazon.cryptography.primitives.internaldafny.__default.DefaultCryptoConfig());
       _25_valueOrError0 = _out3;
       if (!(!((_25_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHMAC.dfy(66,15): " + _25_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHMAC.dfy(66,15): " + _25_valueOrError0);}
       _24_client = (_25_valueOrError0).Extract();
       software.amazon.cryptography.primitives.internaldafny.types._IHMacInput _26_input;
       _26_input = software.amazon.cryptography.primitives.internaldafny.types.HMacInput.create(digestAlgorithm, key, message);
@@ -920,12 +920,12 @@ namespace TestAwsCryptographyPrimitivesHMAC_Compile {
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError> _28_valueOrError1 = Wrappers_Compile.Result<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError>.Default(Dafny.Sequence<byte>.Empty);
       _28_valueOrError1 = (_24_client).HMac(_26_input);
       if (!(!((_28_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHMAC.dfy(74,15): " + _28_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHMAC.dfy(74,15): " + _28_valueOrError1);}
       _27_output = (_28_valueOrError1).Extract();
       if (!((new BigInteger((_27_output).Count)) == (Digest_Compile.__default.Length(digestAlgorithm)))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHMAC.dfy(75,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHMAC.dfy(75,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!((_27_output).Equals(expectedDigest))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHMAC.dfy(76,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHMAC.dfy(76,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
     }
   }
 } // end of namespace TestAwsCryptographyPrimitivesHMAC_Compile
@@ -948,7 +948,7 @@ namespace TestAwsCryptographyPrimitivesAES_Compile {
       _out4 = software.amazon.cryptography.primitives.internaldafny.__default.AtomicPrimitives(software.amazon.cryptography.primitives.internaldafny.__default.DefaultCryptoConfig());
       _30_valueOrError0 = _out4;
       if (!(!((_30_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAES.dfy(99,15): " + _30_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAES.dfy(99,15): " + _30_valueOrError0);}
       _29_client = (_30_valueOrError0).Extract();
       Dafny.ISequence<byte> _31_output;
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError> _32_valueOrError1 = Wrappers_Compile.Result<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError>.Default(Dafny.Sequence<byte>.Empty);
@@ -956,10 +956,10 @@ namespace TestAwsCryptographyPrimitivesAES_Compile {
       _out5 = (_29_client).AESDecrypt(input);
       _32_valueOrError1 = _out5;
       if (!(!((_32_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAES.dfy(100,15): " + _32_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAES.dfy(100,15): " + _32_valueOrError1);}
       _31_output = (_32_valueOrError1).Extract();
       if (!((_31_output).Equals(expectedOutput))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAES.dfy(101,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAES.dfy(101,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
     }
     public static void BasicAESEncryptTest(software.amazon.cryptography.primitives.internaldafny.types._IAESEncryptInput input)
     {
@@ -969,7 +969,7 @@ namespace TestAwsCryptographyPrimitivesAES_Compile {
       _out6 = software.amazon.cryptography.primitives.internaldafny.__default.AtomicPrimitives(software.amazon.cryptography.primitives.internaldafny.__default.DefaultCryptoConfig());
       _34_valueOrError0 = _out6;
       if (!(!((_34_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAES.dfy(108,15): " + _34_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAES.dfy(108,15): " + _34_valueOrError0);}
       _33_client = (_34_valueOrError0).Extract();
       software.amazon.cryptography.primitives.internaldafny.types._IAESEncryptOutput _35_output;
       Wrappers_Compile._IResult<software.amazon.cryptography.primitives.internaldafny.types._IAESEncryptOutput, software.amazon.cryptography.primitives.internaldafny.types._IError> _36_valueOrError1 = Wrappers_Compile.Result<software.amazon.cryptography.primitives.internaldafny.types._IAESEncryptOutput, software.amazon.cryptography.primitives.internaldafny.types._IError>.Default(software.amazon.cryptography.primitives.internaldafny.types.AESEncryptOutput.Default());
@@ -977,7 +977,7 @@ namespace TestAwsCryptographyPrimitivesAES_Compile {
       _out7 = (_33_client).AESEncrypt(input);
       _36_valueOrError1 = _out7;
       if (!(!((_36_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAES.dfy(109,15): " + _36_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAES.dfy(109,15): " + _36_valueOrError1);}
       _35_output = (_36_valueOrError1).Extract();
       software.amazon.cryptography.primitives.internaldafny.types._IAESDecryptInput _37_decryptInput;
       _37_decryptInput = software.amazon.cryptography.primitives.internaldafny.types.AESDecryptInput.create((input).dtor_encAlg, (input).dtor_key, (_35_output).dtor_cipherText, (_35_output).dtor_authTag, (input).dtor_iv, (input).dtor_aad);
@@ -996,14 +996,14 @@ namespace TestAwsCryptographyPrimitivesRSA_Compile {
       _out8 = software.amazon.cryptography.primitives.internaldafny.__default.AtomicPrimitives(software.amazon.cryptography.primitives.internaldafny.__default.DefaultCryptoConfig());
       _39_valueOrError0 = _out8;
       if (!(!((_39_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(51,15): " + _39_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(51,15): " + _39_valueOrError0);}
       _38_client = (_39_valueOrError0).Extract();
       Wrappers_Compile._IResult<software.amazon.cryptography.primitives.internaldafny.types._IGenerateRSAKeyPairOutput, software.amazon.cryptography.primitives.internaldafny.types._IError> _40_keys;
       Wrappers_Compile._IResult<software.amazon.cryptography.primitives.internaldafny.types._IGenerateRSAKeyPairOutput, software.amazon.cryptography.primitives.internaldafny.types._IError> _out9;
       _out9 = (_38_client).GenerateRSAKeyPair(software.amazon.cryptography.primitives.internaldafny.types.GenerateRSAKeyPairInput.create((int)(2048)));
       _40_keys = _out9;
       if (!((_40_keys).is_Success)) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(53,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(53,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       TestAwsCryptographyPrimitivesRSA_Compile.__default.BasicRSAEncryptTest(software.amazon.cryptography.primitives.internaldafny.types.RSAEncryptInput.create(software.amazon.cryptography.primitives.internaldafny.types.RSAPaddingMode.create_OAEP__SHA256(), (((_40_keys).dtor_value).dtor_publicKey).dtor_pem, Dafny.Sequence<byte>.FromElements((byte)(97), (byte)(115), (byte)(100), (byte)(102))), (_40_keys).dtor_value);
     }
     public static void GetRSAKeyModulusLength()
@@ -1014,50 +1014,50 @@ namespace TestAwsCryptographyPrimitivesRSA_Compile {
       _out10 = software.amazon.cryptography.primitives.internaldafny.__default.AtomicPrimitives(software.amazon.cryptography.primitives.internaldafny.__default.DefaultCryptoConfig());
       _42_valueOrError0 = _out10;
       if (!(!((_42_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(67,15): " + _42_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(67,15): " + _42_valueOrError0);}
       _41_client = (_42_valueOrError0).Extract();
       Dafny.ISequence<byte> _43_publicKey2048;
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, Dafny.ISequence<char>> _44_valueOrError1 = Wrappers_Compile.Result<Dafny.ISequence<byte>, Dafny.ISequence<char>>.Default(UTF8.ValidUTF8Bytes.Default());
       _44_valueOrError1 = UTF8.__default.Encode(TestAwsCryptographyPrimitivesRSA_Compile.__default.RSA__PUBLIC__2048);
       if (!(!((_44_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(71,22): " + _44_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(71,22): " + _44_valueOrError1);}
       _43_publicKey2048 = (_44_valueOrError1).Extract();
       software.amazon.cryptography.primitives.internaldafny.types._IGetRSAKeyModulusLengthOutput _45_length2048;
       Wrappers_Compile._IResult<software.amazon.cryptography.primitives.internaldafny.types._IGetRSAKeyModulusLengthOutput, software.amazon.cryptography.primitives.internaldafny.types._IError> _46_valueOrError2 = default(Wrappers_Compile._IResult<software.amazon.cryptography.primitives.internaldafny.types._IGetRSAKeyModulusLengthOutput, software.amazon.cryptography.primitives.internaldafny.types._IError>);
       _46_valueOrError2 = (_41_client).GetRSAKeyModulusLength(software.amazon.cryptography.primitives.internaldafny.types.GetRSAKeyModulusLengthInput.create(_43_publicKey2048));
       if (!(!((_46_valueOrError2).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(72,19): " + _46_valueOrError2);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(72,19): " + _46_valueOrError2);}
       _45_length2048 = (_46_valueOrError2).Extract();
       if (!(((_45_length2048).dtor_length) == (2048))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(74,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(74,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       Dafny.ISequence<byte> _47_publicKey3072;
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, Dafny.ISequence<char>> _48_valueOrError3 = Wrappers_Compile.Result<Dafny.ISequence<byte>, Dafny.ISequence<char>>.Default(UTF8.ValidUTF8Bytes.Default());
       _48_valueOrError3 = UTF8.__default.Encode(TestAwsCryptographyPrimitivesRSA_Compile.__default.RSA__PUBLIC__3072);
       if (!(!((_48_valueOrError3).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(77,22): " + _48_valueOrError3);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(77,22): " + _48_valueOrError3);}
       _47_publicKey3072 = (_48_valueOrError3).Extract();
       software.amazon.cryptography.primitives.internaldafny.types._IGetRSAKeyModulusLengthOutput _49_length3072;
       Wrappers_Compile._IResult<software.amazon.cryptography.primitives.internaldafny.types._IGetRSAKeyModulusLengthOutput, software.amazon.cryptography.primitives.internaldafny.types._IError> _50_valueOrError4 = default(Wrappers_Compile._IResult<software.amazon.cryptography.primitives.internaldafny.types._IGetRSAKeyModulusLengthOutput, software.amazon.cryptography.primitives.internaldafny.types._IError>);
       _50_valueOrError4 = (_41_client).GetRSAKeyModulusLength(software.amazon.cryptography.primitives.internaldafny.types.GetRSAKeyModulusLengthInput.create(_47_publicKey3072));
       if (!(!((_50_valueOrError4).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(78,19): " + _50_valueOrError4);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(78,19): " + _50_valueOrError4);}
       _49_length3072 = (_50_valueOrError4).Extract();
       if (!(((_49_length3072).dtor_length) == (3072))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(80,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(80,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       Dafny.ISequence<byte> _51_publicKey4096;
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, Dafny.ISequence<char>> _52_valueOrError5 = Wrappers_Compile.Result<Dafny.ISequence<byte>, Dafny.ISequence<char>>.Default(UTF8.ValidUTF8Bytes.Default());
       _52_valueOrError5 = UTF8.__default.Encode(TestAwsCryptographyPrimitivesRSA_Compile.__default.RSA__PUBLIC__4096);
       if (!(!((_52_valueOrError5).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(83,22): " + _52_valueOrError5);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(83,22): " + _52_valueOrError5);}
       _51_publicKey4096 = (_52_valueOrError5).Extract();
       software.amazon.cryptography.primitives.internaldafny.types._IGetRSAKeyModulusLengthOutput _53_length4096;
       Wrappers_Compile._IResult<software.amazon.cryptography.primitives.internaldafny.types._IGetRSAKeyModulusLengthOutput, software.amazon.cryptography.primitives.internaldafny.types._IError> _54_valueOrError6 = default(Wrappers_Compile._IResult<software.amazon.cryptography.primitives.internaldafny.types._IGetRSAKeyModulusLengthOutput, software.amazon.cryptography.primitives.internaldafny.types._IError>);
       _54_valueOrError6 = (_41_client).GetRSAKeyModulusLength(software.amazon.cryptography.primitives.internaldafny.types.GetRSAKeyModulusLengthInput.create(_51_publicKey4096));
       if (!(!((_54_valueOrError6).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(84,19): " + _54_valueOrError6);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(84,19): " + _54_valueOrError6);}
       _53_length4096 = (_54_valueOrError6).Extract();
       if (!(((_53_length4096).dtor_length) == (4096))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(86,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(86,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
     }
     public static void BasicRSADecryptTests(software.amazon.cryptography.primitives.internaldafny.types._IRSADecryptInput input, Dafny.ISequence<byte> expectedOutput)
     {
@@ -1067,7 +1067,7 @@ namespace TestAwsCryptographyPrimitivesRSA_Compile {
       _out11 = software.amazon.cryptography.primitives.internaldafny.__default.AtomicPrimitives(software.amazon.cryptography.primitives.internaldafny.__default.DefaultCryptoConfig());
       _56_valueOrError0 = _out11;
       if (!(!((_56_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(94,15): " + _56_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(94,15): " + _56_valueOrError0);}
       _55_client = (_56_valueOrError0).Extract();
       Dafny.ISequence<byte> _57_output;
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError> _58_valueOrError1 = Wrappers_Compile.Result<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError>.Default(Dafny.Sequence<byte>.Empty);
@@ -1075,10 +1075,10 @@ namespace TestAwsCryptographyPrimitivesRSA_Compile {
       _out12 = (_55_client).RSADecrypt(input);
       _58_valueOrError1 = _out12;
       if (!(!((_58_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(95,15): " + _58_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(95,15): " + _58_valueOrError1);}
       _57_output = (_58_valueOrError1).Extract();
       if (!((_57_output).Equals(expectedOutput))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(97,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(97,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
     }
     public static void BasicRSAEncryptTest(software.amazon.cryptography.primitives.internaldafny.types._IRSAEncryptInput input, software.amazon.cryptography.primitives.internaldafny.types._IGenerateRSAKeyPairOutput keypair)
     {
@@ -1088,7 +1088,7 @@ namespace TestAwsCryptographyPrimitivesRSA_Compile {
       _out13 = software.amazon.cryptography.primitives.internaldafny.__default.AtomicPrimitives(software.amazon.cryptography.primitives.internaldafny.__default.DefaultCryptoConfig());
       _60_valueOrError0 = _out13;
       if (!(!((_60_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(106,15): " + _60_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(106,15): " + _60_valueOrError0);}
       _59_client = (_60_valueOrError0).Extract();
       Dafny.ISequence<byte> _61_output;
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError> _62_valueOrError1 = Wrappers_Compile.Result<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError>.Default(Dafny.Sequence<byte>.Empty);
@@ -1096,7 +1096,7 @@ namespace TestAwsCryptographyPrimitivesRSA_Compile {
       _out14 = (_59_client).RSAEncrypt(input);
       _62_valueOrError1 = _out14;
       if (!(!((_62_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(107,15): " + _62_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(107,15): " + _62_valueOrError1);}
       _61_output = (_62_valueOrError1).Extract();
       software.amazon.cryptography.primitives.internaldafny.types._IRSADecryptInput _63_decryptInput;
       _63_decryptInput = software.amazon.cryptography.primitives.internaldafny.types.RSADecryptInput.create((input).dtor_padding, ((keypair).dtor_privateKey).dtor_pem, _61_output);
@@ -1119,13 +1119,13 @@ namespace TestAwsCryptographyPrimitivesRSA_Compile {
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, Dafny.ISequence<char>> _67_valueOrError0 = Wrappers_Compile.Result<Dafny.ISequence<byte>, Dafny.ISequence<char>>.Default(UTF8.ValidUTF8Bytes.Default());
       _67_valueOrError0 = UTF8.__default.Encode(TestAwsCryptographyPrimitivesRSA_Compile.__default.StaticPublicKeyFromGenerateRSAKeyPair());
       if (!(!((_67_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(121,48): " + _67_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(121,48): " + _67_valueOrError0);}
       _66_PublicKeyFromGenerateRSAKeyPairPemBytes = (_67_valueOrError0).Extract();
       Dafny.ISequence<byte> _68_PrivateKeyFromGenerateRSAKeyPairPemBytes;
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, Dafny.ISequence<char>> _69_valueOrError1 = Wrappers_Compile.Result<Dafny.ISequence<byte>, Dafny.ISequence<char>>.Default(UTF8.ValidUTF8Bytes.Default());
       _69_valueOrError1 = UTF8.__default.Encode(TestAwsCryptographyPrimitivesRSA_Compile.__default.StaticPrivateKeyFromGenerateRSAKeyPair());
       if (!(!((_69_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(122,49): " + _69_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(122,49): " + _69_valueOrError1);}
       _68_PrivateKeyFromGenerateRSAKeyPairPemBytes = (_69_valueOrError1).Extract();
       software.amazon.cryptography.primitives.internaldafny.types._IGenerateRSAKeyPairOutput _70_KeyFromGenerateRSAKeyPair;
       _70_KeyFromGenerateRSAKeyPair = software.amazon.cryptography.primitives.internaldafny.types.GenerateRSAKeyPairOutput.create(software.amazon.cryptography.primitives.internaldafny.types.RSAPublicKey.create(2048, _66_PublicKeyFromGenerateRSAKeyPairPemBytes), software.amazon.cryptography.primitives.internaldafny.types.RSAPrivateKey.create(2048, _68_PrivateKeyFromGenerateRSAKeyPairPemBytes));
@@ -1160,13 +1160,13 @@ namespace TestAwsCryptographyPrimitivesRSA_Compile {
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, Dafny.ISequence<char>> _75_valueOrError0 = Wrappers_Compile.Result<Dafny.ISequence<byte>, Dafny.ISequence<char>>.Default(UTF8.ValidUTF8Bytes.Default());
       _75_valueOrError0 = UTF8.__default.Encode(TestAwsCryptographyPrimitivesRSA_Compile.__default.StaticPublicKeyFromTestVectors());
       if (!(!((_75_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(154,41): " + _75_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(154,41): " + _75_valueOrError0);}
       _74_PublicKeyFromTestVectorsPemBytes = (_75_valueOrError0).Extract();
       Dafny.ISequence<byte> _76_PrivateKeyFromTestVectorsPemBytes;
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, Dafny.ISequence<char>> _77_valueOrError1 = Wrappers_Compile.Result<Dafny.ISequence<byte>, Dafny.ISequence<char>>.Default(UTF8.ValidUTF8Bytes.Default());
       _77_valueOrError1 = UTF8.__default.Encode(TestAwsCryptographyPrimitivesRSA_Compile.__default.StaticPrivateKeyFromTestVectors());
       if (!(!((_77_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestRSA.dfy(155,42): " + _77_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestRSA.dfy(155,42): " + _77_valueOrError1);}
       _76_PrivateKeyFromTestVectorsPemBytes = (_77_valueOrError1).Extract();
       software.amazon.cryptography.primitives.internaldafny.types._IGenerateRSAKeyPairOutput _78_KeyFromTestVectorsPair;
       _78_KeyFromTestVectorsPair = software.amazon.cryptography.primitives.internaldafny.types.GenerateRSAKeyPairOutput.create(software.amazon.cryptography.primitives.internaldafny.types.RSAPublicKey.create(4096, _74_PublicKeyFromTestVectorsPemBytes), software.amazon.cryptography.primitives.internaldafny.types.RSAPrivateKey.create(4096, _76_PrivateKeyFromTestVectorsPemBytes));
@@ -1218,9 +1218,9 @@ namespace TestKDF_Compile {
       _80_output = _out15;
       if ((_80_output).is_Success) {
         if (!((new BigInteger(((_80_output).dtor_value).Count)) == (new BigInteger(L)))) {
-          throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestKDF.dfy(30,6): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+          throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestKDF.dfy(30,6): " + Dafny.Sequence<char>.FromString("expectation violation"));}
         if (!(((_80_output).dtor_value).Equals(expectedOKM))) {
-          throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestKDF.dfy(31,6): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+          throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestKDF.dfy(31,6): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       }
     }
     public static void KdfTest(software.amazon.cryptography.primitives.internaldafny.types._IKdfCtrInput input, Dafny.ISequence<byte> expectedOKM)
@@ -1231,7 +1231,7 @@ namespace TestKDF_Compile {
       _out16 = software.amazon.cryptography.primitives.internaldafny.__default.AtomicPrimitives(software.amazon.cryptography.primitives.internaldafny.__default.DefaultCryptoConfig());
       _82_valueOrError0 = _out16;
       if (!(!((_82_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestKDF.dfy(40,15): " + _82_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestKDF.dfy(40,15): " + _82_valueOrError0);}
       _81_client = (_82_valueOrError0).Extract();
       Dafny.ISequence<byte> _83_output;
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError> _84_valueOrError1 = Wrappers_Compile.Result<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError>.Default(Dafny.Sequence<byte>.Empty);
@@ -1239,12 +1239,12 @@ namespace TestKDF_Compile {
       _out17 = (_81_client).KdfCounterMode(input);
       _84_valueOrError1 = _out17;
       if (!(!((_84_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestKDF.dfy(42,15): " + _84_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestKDF.dfy(42,15): " + _84_valueOrError1);}
       _83_output = (_84_valueOrError1).Extract();
       if (!((new BigInteger((_83_output).Count)) == (new BigInteger((input).dtor_expectedLength)))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestKDF.dfy(43,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestKDF.dfy(43,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!((_83_output).Equals(expectedOKM))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestKDF.dfy(44,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestKDF.dfy(44,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
     }
   }
 } // end of namespace TestKDF_Compile
@@ -1500,7 +1500,7 @@ namespace TestKDFK__TestVectors_Compile {
       Dafny.ISequence<byte> _92_OKM = _let_tmp_rhs0.dtor_OKM;
       Dafny.Helpers.Print((Dafny.Sequence<char>.Concat(_87_name, Dafny.Sequence<char>.FromString("\n"))));
       if (!((((new BigInteger((_89_IKM).Count)) == (new BigInteger(32))) && ((_91_L) == (32))) && (((new BigInteger(4)) + (new BigInteger((_90_info).Count))) < (StandardLibrary_mUInt_Compile.__default.INT32__MAX__LIMIT)))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestKDF_TestVectors.dfy(297,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestKDF_TestVectors.dfy(297,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       TestKDF_Compile.__default.KdfRawDeriveTest(_89_IKM, _90_info, _91_L, _92_OKM);
     }
     public static void ExpectTestVector(TestKDFK__TestVectors_Compile._ITestVector vector)
@@ -1588,7 +1588,7 @@ namespace TestAwsCryptographyPrimitivesHKDF_Compile {
       _out18 = software.amazon.cryptography.primitives.internaldafny.__default.AtomicPrimitives(software.amazon.cryptography.primitives.internaldafny.__default.DefaultCryptoConfig());
       _108_valueOrError0 = _out18;
       if (!(!((_108_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(86,15): " + _108_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(86,15): " + _108_valueOrError0);}
       _107_client = (_108_valueOrError0).Extract();
       Dafny.ISequence<byte> _109_output;
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError> _110_valueOrError1 = Wrappers_Compile.Result<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError>.Default(Dafny.Sequence<byte>.Empty);
@@ -1596,12 +1596,12 @@ namespace TestAwsCryptographyPrimitivesHKDF_Compile {
       _out19 = (_107_client).HkdfExtract(input);
       _110_valueOrError1 = _out19;
       if (!(!((_110_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(88,15): " + _110_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(88,15): " + _110_valueOrError1);}
       _109_output = (_110_valueOrError1).Extract();
       if (!((new BigInteger((_109_output).Count)) == (Digest_Compile.__default.Length((input).dtor_digestAlgorithm)))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(89,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(89,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!((_109_output).Equals(expectedPRK))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(90,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(90,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
     }
     public static void BasicExpandTest(software.amazon.cryptography.primitives.internaldafny.types._IHkdfExpandInput input, Dafny.ISequence<byte> expectedOKM)
     {
@@ -1611,7 +1611,7 @@ namespace TestAwsCryptographyPrimitivesHKDF_Compile {
       _out20 = software.amazon.cryptography.primitives.internaldafny.__default.AtomicPrimitives(software.amazon.cryptography.primitives.internaldafny.__default.DefaultCryptoConfig());
       _112_valueOrError0 = _out20;
       if (!(!((_112_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(98,15): " + _112_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(98,15): " + _112_valueOrError0);}
       _111_client = (_112_valueOrError0).Extract();
       Dafny.ISequence<byte> _113_output;
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError> _114_valueOrError1 = Wrappers_Compile.Result<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError>.Default(Dafny.Sequence<byte>.Empty);
@@ -1619,12 +1619,12 @@ namespace TestAwsCryptographyPrimitivesHKDF_Compile {
       _out21 = (_111_client).HkdfExpand(input);
       _114_valueOrError1 = _out21;
       if (!(!((_114_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(100,15): " + _114_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(100,15): " + _114_valueOrError1);}
       _113_output = (_114_valueOrError1).Extract();
       if (!((new BigInteger((_113_output).Count)) == (new BigInteger((input).dtor_expectedLength)))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(101,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(101,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!((_113_output).Equals(expectedOKM))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(102,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(102,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
     }
     public static void BasicHkdfTest(software.amazon.cryptography.primitives.internaldafny.types._IHkdfInput input, Dafny.ISequence<byte> expectedOKM)
     {
@@ -1634,7 +1634,7 @@ namespace TestAwsCryptographyPrimitivesHKDF_Compile {
       _out22 = software.amazon.cryptography.primitives.internaldafny.__default.AtomicPrimitives(software.amazon.cryptography.primitives.internaldafny.__default.DefaultCryptoConfig());
       _116_valueOrError0 = _out22;
       if (!(!((_116_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(110,15): " + _116_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(110,15): " + _116_valueOrError0);}
       _115_client = (_116_valueOrError0).Extract();
       Dafny.ISequence<byte> _117_output;
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError> _118_valueOrError1 = Wrappers_Compile.Result<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError>.Default(Dafny.Sequence<byte>.Empty);
@@ -1642,12 +1642,12 @@ namespace TestAwsCryptographyPrimitivesHKDF_Compile {
       _out23 = (_115_client).Hkdf(input);
       _118_valueOrError1 = _out23;
       if (!(!((_118_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(112,15): " + _118_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(112,15): " + _118_valueOrError1);}
       _117_output = (_118_valueOrError1).Extract();
       if (!((new BigInteger((_117_output).Count)) == (new BigInteger((input).dtor_expectedLength)))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(113,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(113,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!((_117_output).Equals(expectedOKM))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(114,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestAwsCryptographyPrimitivesHKDF.dfy(114,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
     }
   }
 } // end of namespace TestAwsCryptographyPrimitivesHKDF_Compile
@@ -1852,17 +1852,17 @@ namespace ConstantTimeTest_Compile {
     public static void ConstantTimeTest()
     {
       if (!(ConstantTime_Compile.__default.Equals(Dafny.Sequence<byte>.FromElements(), Dafny.Sequence<byte>.FromElements()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/ConstantTime.dfy(10,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/ConstantTime.dfy(10,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!(ConstantTime_Compile.__default.Equals(Dafny.Sequence<byte>.FromElements((byte)(1)), Dafny.Sequence<byte>.FromElements((byte)(1))))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/ConstantTime.dfy(11,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/ConstantTime.dfy(11,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!(!(ConstantTime_Compile.__default.Equals(Dafny.Sequence<byte>.FromElements((byte)(1)), Dafny.Sequence<byte>.FromElements((byte)(2)))))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/ConstantTime.dfy(12,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/ConstantTime.dfy(12,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!(ConstantTime_Compile.__default.Equals(Dafny.Sequence<byte>.FromElements((byte)(1), (byte)(2), (byte)(3)), Dafny.Sequence<byte>.FromElements((byte)(1), (byte)(2), (byte)(3))))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/ConstantTime.dfy(13,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/ConstantTime.dfy(13,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!(!(ConstantTime_Compile.__default.Equals(Dafny.Sequence<byte>.FromElements((byte)(2), (byte)(2), (byte)(3)), Dafny.Sequence<byte>.FromElements((byte)(1), (byte)(2), (byte)(3)))))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/ConstantTime.dfy(14,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/ConstantTime.dfy(14,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!(!(ConstantTime_Compile.__default.Equals(Dafny.Sequence<byte>.FromElements((byte)(1), (byte)(2), (byte)(3)), Dafny.Sequence<byte>.FromElements((byte)(1), (byte)(2), (byte)(4)))))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/ConstantTime.dfy(15,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/ConstantTime.dfy(15,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
     }
   }
 } // end of namespace ConstantTimeTest_Compile
@@ -1877,7 +1877,7 @@ namespace TestAwsCryptographyPrimitivesGenerateRandomBytes_Compile {
       _out24 = software.amazon.cryptography.primitives.internaldafny.__default.AtomicPrimitives(software.amazon.cryptography.primitives.internaldafny.__default.DefaultCryptoConfig());
       _130_valueOrError0 = _out24;
       if (!(!((_130_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestGenerateRandomBytes.dfy(11,15): " + _130_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestGenerateRandomBytes.dfy(11,15): " + _130_valueOrError0);}
       _129_client = (_130_valueOrError0).Extract();
       int _131_length;
       _131_length = (int)(5);
@@ -1891,10 +1891,10 @@ namespace TestAwsCryptographyPrimitivesGenerateRandomBytes_Compile {
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError> _135_valueOrError1 = Wrappers_Compile.Result<Dafny.ISequence<byte>, software.amazon.cryptography.primitives.internaldafny.types._IError>.Default(Dafny.Sequence<byte>.Empty);
       _135_valueOrError1 = _133_output;
       if (!(!((_135_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestGenerateRandomBytes.dfy(20,14): " + _135_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestGenerateRandomBytes.dfy(20,14): " + _135_valueOrError1);}
       _134_value = (_135_valueOrError1).Extract();
       if (!((new BigInteger((_134_value).Count)) == (new BigInteger(_131_length)))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestGenerateRandomBytes.dfy(21,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestGenerateRandomBytes.dfy(21,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
     }
   }
 } // end of namespace TestAwsCryptographyPrimitivesGenerateRandomBytes_Compile
@@ -1904,7 +1904,7 @@ namespace TestSignature_Compile {
     public static void RequireGoodKeyLengths(software.amazon.cryptography.primitives.internaldafny.types._IECDSASignatureAlgorithm alg, Signature._ISignatureKeyPair sigKeyPair)
     {
       if (!((new BigInteger(((sigKeyPair).dtor_verificationKey).Count)) == (Signature.__default.FieldSize(alg)))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestSignature.dfy(24,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestSignature.dfy(24,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
     }
     public static void YCompression(software.amazon.cryptography.primitives.internaldafny.types._IECDSASignatureAlgorithm alg, BigInteger fieldSize)
     {
@@ -1914,7 +1914,7 @@ namespace TestSignature_Compile {
       _out26 = Signature.ECDSA.ExternKeyGen(alg);
       _137_valueOrError0 = _out26;
       if (!(!((_137_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestSignature.dfy(28,12): " + _137_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestSignature.dfy(28,12): " + _137_valueOrError0);}
       _136_res = (_137_valueOrError0).Extract();
       TestSignature_Compile.__default.RequireGoodKeyLengths(alg, _136_res);
       Dafny.ISequence<byte> _138_public;
@@ -1924,11 +1924,11 @@ namespace TestSignature_Compile {
       _138_public = _rhs0;
       _139_secret = _rhs1;
       if (!((new BigInteger((_139_secret).Count)).Sign == 1)) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestSignature.dfy(33,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestSignature.dfy(33,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!((new BigInteger((_138_public).Count)) == ((BigInteger.One) + (Dafny.Helpers.EuclideanDivision((fieldSize) + (new BigInteger(7)), new BigInteger(8)))))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestSignature.dfy(34,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestSignature.dfy(34,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!((((_138_public).Select(BigInteger.Zero)) == ((byte)(2))) || (((_138_public).Select(BigInteger.Zero)) == ((byte)(3))))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestSignature.dfy(35,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestSignature.dfy(35,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
     }
     public static void VerifyMessage(software.amazon.cryptography.primitives.internaldafny.types._IECDSASignatureAlgorithm alg)
     {
@@ -1936,7 +1936,7 @@ namespace TestSignature_Compile {
       Wrappers_Compile._IResult<Dafny.ISequence<byte>, Dafny.ISequence<char>> _141_valueOrError0 = Wrappers_Compile.Result<Dafny.ISequence<byte>, Dafny.ISequence<char>>.Default(UTF8.ValidUTF8Bytes.Default());
       _141_valueOrError0 = UTF8.__default.Encode(Dafny.Sequence<char>.FromString("Hello, World!"));
       if (!(!((_141_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestSignature.dfy(39,16): " + _141_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestSignature.dfy(39,16): " + _141_valueOrError0);}
       _140_message = (_141_valueOrError0).Extract();
       software.amazon.cryptography.primitives.internaldafny.types._IGenerateECDSASignatureKeyInput _142_genInput;
       _142_genInput = software.amazon.cryptography.primitives.internaldafny.types.GenerateECDSASignatureKeyInput.create(alg);
@@ -1946,7 +1946,7 @@ namespace TestSignature_Compile {
       _out27 = Signature.ECDSA.ExternKeyGen(alg);
       _144_valueOrError1 = _out27;
       if (!(!((_144_valueOrError1).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestSignature.dfy(41,13): " + _144_valueOrError1);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestSignature.dfy(41,13): " + _144_valueOrError1);}
       _143_keys = (_144_valueOrError1).Extract();
       TestSignature_Compile.__default.RequireGoodKeyLengths(alg, _143_keys);
       Dafny.ISequence<byte> _145_signature;
@@ -1955,24 +1955,24 @@ namespace TestSignature_Compile {
       _out28 = Signature.ECDSA.Sign(alg, (_143_keys).dtor_signingKey, _140_message);
       _146_valueOrError2 = _out28;
       if (!(!((_146_valueOrError2).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestSignature.dfy(44,18): " + _146_valueOrError2);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestSignature.dfy(44,18): " + _146_valueOrError2);}
       _145_signature = (_146_valueOrError2).Extract();
       bool _147_shouldBeTrue;
       Wrappers_Compile._IResult<bool, software.amazon.cryptography.primitives.internaldafny.types._IError> _148_valueOrError3 = Wrappers_Compile.Result<bool, software.amazon.cryptography.primitives.internaldafny.types._IError>.Default(false);
       _148_valueOrError3 = Signature.ECDSA.Verify(alg, (_143_keys).dtor_verificationKey, _140_message, _145_signature);
       if (!(!((_148_valueOrError3).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestSignature.dfy(45,21): " + _148_valueOrError3);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestSignature.dfy(45,21): " + _148_valueOrError3);}
       _147_shouldBeTrue = (_148_valueOrError3).Extract();
       if (!(_147_shouldBeTrue)) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestSignature.dfy(46,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestSignature.dfy(46,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       bool _149_shouldBeFalse;
       Wrappers_Compile._IResult<bool, software.amazon.cryptography.primitives.internaldafny.types._IError> _150_valueOrError4 = Wrappers_Compile.Result<bool, software.amazon.cryptography.primitives.internaldafny.types._IError>.Default(false);
       _150_valueOrError4 = Signature.ECDSA.Verify(alg, (_143_keys).dtor_verificationKey, Dafny.Sequence<byte>.Concat(_140_message, Dafny.Sequence<byte>.FromElements((byte)(1))), _145_signature);
       if (!(!((_150_valueOrError4).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestSignature.dfy(48,22): " + _150_valueOrError4);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestSignature.dfy(48,22): " + _150_valueOrError4);}
       _149_shouldBeFalse = (_150_valueOrError4).Extract();
       if (!(!(_149_shouldBeFalse))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/test/TestSignature.dfy(49,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/test/TestSignature.dfy(49,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
     }
     public static void YCompression384()
     {

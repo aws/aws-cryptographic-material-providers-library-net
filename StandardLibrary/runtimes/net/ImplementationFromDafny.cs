@@ -14620,15 +14620,15 @@ namespace JSON_mUtils_mStr_Compile {
     public static void Test()
     {
       if (!((JSON_mUtils_mStr_Compile.__default.OfInt(BigInteger.Zero, new BigInteger(10))).Equals(Dafny.Sequence<char>.FromString("0")))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/libraries/src/JSON/Utils/Str.dfy(229,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/libraries/src/JSON/Utils/Str.dfy(229,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!((JSON_mUtils_mStr_Compile.__default.OfInt(new BigInteger(3), new BigInteger(10))).Equals(Dafny.Sequence<char>.FromString("3")))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/libraries/src/JSON/Utils/Str.dfy(230,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/libraries/src/JSON/Utils/Str.dfy(230,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!((JSON_mUtils_mStr_Compile.__default.OfInt(new BigInteger(302), new BigInteger(10))).Equals(Dafny.Sequence<char>.FromString("302")))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/libraries/src/JSON/Utils/Str.dfy(231,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/libraries/src/JSON/Utils/Str.dfy(231,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!((JSON_mUtils_mStr_Compile.__default.OfInt(new BigInteger(-3), new BigInteger(10))).Equals(Dafny.Sequence<char>.FromString("-3")))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/libraries/src/JSON/Utils/Str.dfy(232,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/libraries/src/JSON/Utils/Str.dfy(232,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
       if (!((JSON_mUtils_mStr_Compile.__default.OfInt(new BigInteger(-302), new BigInteger(10))).Equals(Dafny.Sequence<char>.FromString("-302")))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/libraries/src/JSON/Utils/Str.dfy(233,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/libraries/src/JSON/Utils/Str.dfy(233,4): " + Dafny.Sequence<char>.FromString("expectation violation"));}
     }
     public static Dafny.ISequence<char> OfBool(bool b) {
       if (b) {

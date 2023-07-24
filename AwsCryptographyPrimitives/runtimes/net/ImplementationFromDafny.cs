@@ -9,7 +9,7 @@ using System;
 using System.Numerics;
 using System.Collections;
 [assembly: DafnyAssembly.DafnySourceAttribute(@"// dafny 4.1.0.0
-// Command Line Options: -stdin -noVerify -vcsCores:2 -compileTarget:cs -spillTargetCode:3 -compile:0 -optimizeErasableDatatypeWrapper:0 -quantifierSyntax:3 -unicodeChar:0 -functionSyntax:3 -useRuntimeLib -out runtimes/net/ImplementationFromDafny -library:/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/StandardLibrary/src/Index.dfy
+// Command Line Options: -stdin -noVerify -vcsCores:2 -compileTarget:cs -spillTargetCode:3 -compile:0 -optimizeErasableDatatypeWrapper:0 -quantifierSyntax:3 -unicodeChar:0 -functionSyntax:3 -useRuntimeLib -out runtimes/net/ImplementationFromDafny -library:/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/StandardLibrary/src/Index.dfy
 // the_program
 
 
@@ -4991,7 +4991,7 @@ namespace HKDF_Compile {
       _out6 = HMAC.HMac.Build(digest);
       _40_valueOrError0 = _out6;
       if (!(!((_40_valueOrError0).IsFailure()))) {
-        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-net/AwsCryptographyPrimitives/src/HKDF/HKDF.dfy(222,13): " + _40_valueOrError0);}
+        throw new Dafny.HaltException("/Users/jocorell/crypto-tools/mpl/aws-cryptographic-material-providers-library-dafny/AwsCryptographyPrimitives/src/HKDF/HKDF.dfy(222,13): " + _40_valueOrError0);}
       _39_hmac = (_40_valueOrError0).Extract();
       BigInteger _41_hashLength;
       _41_hashLength = Digest_Compile.__default.Length(digest);
