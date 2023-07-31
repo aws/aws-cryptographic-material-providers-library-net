@@ -52,7 +52,7 @@ jobs:
           dotnet-version: ${{ matrix.dotnet-version }}
 
       - name: Download Dependencies 
-        working-directory: ./${{ matrix.library }}
+        working-directory: ${{ matrix.library }}
         run: make setup_net
 
       - name: Test ${{ matrix.library }}
