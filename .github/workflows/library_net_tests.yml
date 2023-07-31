@@ -35,7 +35,7 @@ jobs:
       DOTNET_CLI_TELEMETRY_OPTOUT: 1
       DOTNET_NOLOGO: 1
     steps:
-      - name: Support longpaths on Git checkout and checkout
+      - name: Support longpaths on Git checkout
         run: |
           git config --global core.longpaths true
 
@@ -52,7 +52,6 @@ jobs:
           dotnet-version: ${{ matrix.dotnet-version }}
 
       - name: Download Dependencies 
-        uses: actions/checkout@v2
         working-directory: ./${{ matrix.library }}
         run: make setup_net
 
