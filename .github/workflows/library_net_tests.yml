@@ -39,10 +39,6 @@ jobs:
         run: |
           git config --global core.longpaths true
 
-      - uses: actions/checkout@v3
-        with:
-          submodules: recursive
-
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
