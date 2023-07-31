@@ -36,7 +36,6 @@ jobs:
       DOTNET_NOLOGO: 1
     steps:
       - name: Support longpaths on Git checkout and checkout
-        uses: actions/checkout@v2
         run: |
           git config --global core.longpaths true
 
@@ -53,7 +52,8 @@ jobs:
           dotnet-version: ${{ matrix.dotnet-version }}
 
       - name: Download Dependencies 
-        working-directory: ${{ matrix.library }}
+        uses: actions/checkout@v2
+        working-directory: ./${{ matrix.library }}
         run: make setup_net
 
       - name: Test ${{ matrix.library }}
