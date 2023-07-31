@@ -35,6 +35,11 @@ jobs:
       DOTNET_CLI_TELEMETRY_OPTOUT: 1
       DOTNET_NOLOGO: 1
     steps:
+      - name: Support longpaths on Git checkout and checkout
+        uses: actions/checkout@v2
+        run: |
+          git config --global core.longpaths true
+
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
@@ -49,9 +54,7 @@ jobs:
 
       - name: Download Dependencies 
         working-directory: ${{ matrix.library }}
-        run: |
-          pwd
-          make setup_net
+        run: make setup_net
 
       - name: Test ${{ matrix.library }}
         working-directory: ./${{ matrix.library }}
