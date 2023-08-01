@@ -1,15 +1,15 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Description: "IAM Managed Policies/Role for Material Providers Library"
+Description: "IAM Managed Policies/Role for AWS Cryptographic Material Providers Library for .NET"
 
 Parameters:
   ProjectName:
     Type: String
     Description: A prefix that will be applied to any names
-    Default: MPL-Dafny
+    Default: MPL-NET
   GitHubRepo:
     Type: String
     Description: GitHub Repo that invokes CI
-    Default: aws/aws-cryptographic-material-providers-library-java
+    Default: aws/aws-cryptographic-material-providers-library-net
 
 Resources:
   GitHubCIRole:
@@ -49,7 +49,6 @@ Resources:
               "Condition": {
                 "StringEquals": {
                   "aws:PrincipalArn": [
-                    "arn:aws:iam::587316601012:role/service-role/codebuild-AWS-MPL-Java-service-role-release",
                     "arn:aws:iam::370957321024:role/ToolsDevelopment"
                   ]
                 }
