@@ -1,7 +1,0 @@
-{
-    "NumberOfBuildsInBatch": 50,
-    "ProjectDescription": "CI for MPL NET",
-    "ProjectName": "AWS-MPL-NET",
-    "SourceLocation": "https://github.com/aws/aws-cryptographic-material-providers-library-net.git"
-  }
-  
