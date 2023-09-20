@@ -14,7 +14,6 @@ also provides APIs to define and use wrapping keys from other key providers.
 
 The AWS Cryptographic Material Providers Library for .NET provides methods for encrypting and decrypting cryptographic materials used in higher level client side encryption libraries. 
 
-[Security issue notifications](./CONTRIBUTING.md#security-issue-notifications)
 
 ## Security
 If you discover a potential security issue in this project
@@ -29,13 +28,14 @@ To use the AWS Cryptographic Material Providers Library for .NET you must have:
 
 * **A .NET Framework 6.0 development environment**
 
-  If you do not have it installed, you can find install instructions [here](https://dotnet.microsoft.com/en-us/download/dotnet/6.0).
+  If you do not have it installed, you can find installation instructions [here](https://dotnet.microsoft.com/en-us/download/dotnet/6.0).
 
 * **Bouncy Castle**
 
   The AWS Cryptographic Material Providers Library for .NET uses Bouncy Castle for the underlying cryptography and to serialize and deserialize cryptographic objects.
 
-  If you do not have Bouncy Castle, go to https://www.bouncycastle.org/csharp/, you can pick it up from NuGet
+  If you do not have Bouncy Castle, go to https://www.bouncycastle.org/csharp/ to learn more. 
+  You can also download it from NuGet
   ```
     <PackageReference Include="BouncyCastle.Cryptography" Version="2.2.1" />
   ```
@@ -43,8 +43,8 @@ To use the AWS Cryptographic Material Providers Library for .NET you must have:
 ### Optional Prerequisites
 
 #### AWS Integration
-You don't need an Amazon Web Services (AWS) account to use the AWS Cryptographic Material Providers Library, some APIs require an AWS account, an AWS KMS key, an AWS DynamoDB Table, and the AWS SDK for .NET V3.
-However; all APIs require the AWS SDK for .NET V3.
+You don't need an Amazon Web Services (AWS) account to use the AWS Cryptographic Material Providers Library, some APIs require an AWS account, an AWS KMS key, or an AWS DynamoDB Table.
+However, all APIs require the AWS SDK for .NET V3.
 
 Note that `Async AmazonKeyManagementServiceClient` and `Async DynamoDBAsyncClient` methods are not supported, only the synchronous methods.
 
@@ -56,7 +56,7 @@ Note that `Async AmazonKeyManagementServiceClient` and `Async DynamoDBAsyncClien
 
 ### Download the AWS Cryptographic Material Providers Library for .NET
 The AWS Cryptographic Material Providers Library for .NET is available on NuGet and can be referenced
-from an existing .csproj through typical ways.
+from an existing .csproj.
 
 Using the dotnet CLI:
 ```shell
