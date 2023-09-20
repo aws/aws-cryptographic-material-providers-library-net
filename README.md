@@ -43,7 +43,8 @@ To use the AWS Cryptographic Material Providers Library for .NET you must have:
 ### Optional Prerequisites
 
 #### AWS Integration
-You don't need an Amazon Web Services (AWS) account to use the AWS Cryptographic Material Providers Library, some APIs require an AWS account, an AWS KMS key, or an AWS DynamoDB Table.
+You don't need an Amazon Web Services (AWS) account to use the AWS Cryptographic Material Providers Library, 
+but some APIs require an AWS account, an AWS KMS key, or an AWS DynamoDB Table.
 However, all APIs require the AWS SDK for .NET V3.
 
 Note that `Async AmazonKeyManagementServiceClient` and `Async DynamoDBAsyncClient` methods are not supported, only the synchronous methods.
