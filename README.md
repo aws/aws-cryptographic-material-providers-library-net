@@ -1,13 +1,8 @@
-# AWS Cryptographic Material Providers Library for Java
-
-Note: The AWS Cryptographic Material Providers Library is released as a
-[developer preview](https://docs.aws.amazon.com/sdkref/latest/guide/maint-policy.html#version-life-cycle)
-and is subject to change.
-The current release is not intended to be used in production environments.
+# AWS Cryptographic Material Providers Library for .NET 
 
 The AWS Cryptographic Material Providers Library abstracts lower level cryptographic materials management of encryption and decryption materials.
 It uses cryptographic best practices to protect the data keys that protect your data.
-The data key is protected with a key encryption key called a *wrapping key* or *master key*.
+The data key is protected with a key encryption key called a *wrapping key*.
 The encryption method returns the data key and one or more encrypted data keys.
 Supported libraries use this information to perform envelope encryption.
 The data key is used to protect your data,
@@ -17,9 +12,8 @@ You can use AWS KMS keys in [AWS Key Management Service](https://aws.amazon.com/
 The AWS Cryptographic Material Providers Library
 also provides APIs to define and use wrapping keys from other key providers. 
 
-The AWS Cryptographic Material Providers Library for Java provides methods for encrypting and decrypting cryptographic materials used in higher level client side encryption libraries. 
+The AWS Cryptographic Material Providers Library for .NET provides methods for encrypting and decrypting cryptographic materials used in higher level client side encryption libraries. 
 
-[Security issue notifications](./CONTRIBUTING.md#security-issue-notifications)
 
 ## Security
 If you discover a potential security issue in this project
@@ -30,66 +24,61 @@ Please **do not** create a public GitHub issue.
 ## Getting Started
 
 ### Required Prerequisites
-To use the AWS Cryptographic Material Providers Library for Java you must have:
+To use the AWS Cryptographic Material Providers Library for .NET you must have:
 
-* **A Java 8 or newer development environment**
+* **A .NET Framework 6.0 development environment**
 
-  If you do not have one, we recommend [Amazon Corretto](https://aws.amazon.com/corretto/).
+  If you do not have it installed, you can find installation instructions [here](https://dotnet.microsoft.com/en-us/download/dotnet/6.0).
 
-  **Note:** If you use the Oracle JDK, you must also download and install the [Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html).
+* **Bouncy Castle**
 
-* **Bouncy Castle** or **Bouncy Castle FIPS**
+  The AWS Cryptographic Material Providers Library for .NET uses Bouncy Castle for the underlying cryptography and to serialize and deserialize cryptographic objects.
 
-  The AWS Cryptographic Material Providers Library for Java uses Bouncy Castle to serialize and deserialize cryptographic objects.
-  It does not explicitly use Bouncy Castle (or any other [JCA Provider](https://docs.oracle.com/javase/8/docs/api/java/security/Provider.html)) for the underlying cryptography.
-  Instead, it uses the platform default, which you can configure or override as documented in the
-  [Java Cryptography Architecture (JCA) Reference Guide](https://docs.oracle.com/javase/9/security/java-cryptography-architecture-jca-reference-guide.htm#JSSEC-GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190).
-
-  If you do not have Bouncy Castle, go to https://bouncycastle.org/latest_releases.html, then download the provider file that corresponds to your JDK.
-  Or, you can pick it up from Maven (groupId: `org.bouncycastle`, artifactId: `bcprov-ext-jdk18on`).
+  If you do not have Bouncy Castle, go to https://www.bouncycastle.org/csharp/ to learn more. 
+  You can also download it from NuGet
+  ```
+    <PackageReference Include="BouncyCastle.Cryptography" Version="2.2.1" />
+  ```
 
 ### Optional Prerequisites
 
 #### AWS Integration
-You don't need an Amazon Web Services (AWS) account to use the AWS Cryptographic Material Providers Library, but some APIs require an AWS account, an AWS KMS key, an AWS DynamoDB Table, and the AWS SDK for Java V2. Note that the `KmsAsyncClient` and `DynamoDBAsyncClient` are not supported, only the synchronous clients.
+You don't need an Amazon Web Services (AWS) account to use the AWS Cryptographic Material Providers Library, 
+but some APIs require an AWS account, an AWS KMS key, or an AWS DynamoDB Table.
+However, all APIs require the AWS SDK for .NET V3.
+
+Note that `Async AmazonKeyManagementServiceClient` and `Async DynamoDBAsyncClient` methods are not supported, only the synchronous methods.
 
 * **To create an AWS account**, go to [Sign In or Create an AWS Account](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html) and then choose **I am a new user.** Follow the instructions to create an AWS account.
 
-* **To create a symmetric encryption KMS key in AWS KMS**, see [Creating Keys](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html).
+* **To create a KMS key in AWS KMS**, see [Creating Keys](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html).
 
-* **To download and install the AWS SDK for Java 2.x**, see [Installing the AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/v2/developer-guide/getting-started.html).
+* **To download and install the AWS SDK for .NET 3.x**, see [Installing the AWS SDK for .NET 3.x](https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/net-dg-install-assemblies.html).
 
-#### Amazon Corretto Crypto Provider
-Many users find that the Amazon Corretto Crypto Provider (ACCP) significantly improves the performance of the AWS Encryption SDK.
-For help installing and using ACCP, see the [amazon-corretto-crypto-provider repository](https://github.com/corretto/amazon-corretto-crypto-provider).
+### Download the AWS Cryptographic Material Providers Library for .NET
+The AWS Cryptographic Material Providers Library for .NET is available on NuGet and can be referenced
+from an existing .csproj.
 
-### Download the AWS Cryptographic Material Providers Library for Java
-You can get the latest release from Maven or Gradle:
+Using the dotnet CLI:
+```shell
+dotnet add <your-project-name>.csproj package AWS.Cryptography.MaterialProviders
+```
 
-#### Maven:
-
+Alternatively, you may directly modify the `.csproj` and add the
+AWS Cryptographic Material Providers Library to `PackageReference` `ItemGroup`:
 ```xml
-<dependency>
-  <groupId>software.amazon.cryptography</groupId>
-  <artifactId>aws-cryptographic-material-providers</artifactId>
-  <version>1.0.0</version>
-</dependency>
+<PackageReference Include="AWS.Cryptography.MaterialProviders" />
 ```
 
-#### Gradle:
-```
-dependencies {
-    implementation("software.amazon.cryptography:aws-cryptographic-material-providers:1.0.0")
-}
-```
+The AWS Cryptographic Material Providers Library targets [.NET Framework](https://docs.microsoft.com/en-us/dotnet/framework/) 6.0.
 
-## Public API
+### Additional setup for macOS only
 
-Our [versioning policy](./VERSIONING.rst) applies to all public and protected classes/methods/fields
-in the  `software.amazon.cryptography.materialproviders` package unless otherwise documented.
+If you are using macOS then you must install OpenSSL 1.1,
+and the OpenSSL 1.1 `lib` directory must be on the dynamic linker path at runtime.
+Also, if using an M1-based Mac, you must install OpenSSL and the .NET SDK for x86-64.
+Please refer to [this wiki](https://github.com/aws/aws-encryption-sdk-dafny/wiki/Using-the-AWS-Encryption-SDK-for-.NET-on-macOS) for detailed instructions.
 
-The `software.amazon.cryptography.materialproviders.internaldafny` package is not included in this public API.
+## License
 
-## FAQ
-
-See the [Frequently Asked Questions](https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/faq.html) page in the official documentation.
+This library is licensed under the Apache 2.0 License.
