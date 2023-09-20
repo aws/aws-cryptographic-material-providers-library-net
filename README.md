@@ -51,7 +51,7 @@ Note that `Async AmazonKeyManagementServiceClient` and `Async DynamoDBAsyncClien
 
 * **To create an AWS account**, go to [Sign In or Create an AWS Account](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html) and then choose **I am a new user.** Follow the instructions to create an AWS account.
 
-* **To create a symmetric encryption KMS key in AWS KMS**, see [Creating Keys](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html).
+* **To create a KMS key in AWS KMS**, see [Creating Keys](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html).
 
 * **To download and install the AWS SDK for .NET 3.x**, see [Installing the AWS SDK for .NET 3.x](https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/net-dg-install-assemblies.html).
 
