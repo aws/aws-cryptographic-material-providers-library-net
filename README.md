@@ -33,8 +33,7 @@ To use the AWS Cryptographic Material Providers Library for .NET you must have:
 
 * **Bouncy Castle**
 
-  The AWS Cryptographic Material Providers Library for .NET uses Bouncy Castle to serialize and deserialize cryptographic objects.
-  It does not explicitly use Bouncy Castle (or any other [cryptography model](https://learn.microsoft.com/en-us/dotnet/standard/security/cryptography-model)) for the underlying cryptography.
+  The AWS Cryptographic Material Providers Library for .NET uses Bouncy Castle for the underlying cryptography and to serialize and deserialize cryptographic objects.
 
   If you do not have Bouncy Castle, go to https://www.bouncycastle.org/csharp/, you can pick it up from NuGet
   ```
@@ -44,7 +43,9 @@ To use the AWS Cryptographic Material Providers Library for .NET you must have:
 ### Optional Prerequisites
 
 #### AWS Integration
-You don't need an Amazon Web Services (AWS) account to use the AWS Cryptographic Material Providers Library, but some APIs require an AWS account, an AWS KMS key, an AWS DynamoDB Table, and the AWS SDK for .NET V2.
+You don't need an Amazon Web Services (AWS) account to use the AWS Cryptographic Material Providers Library, some APIs require an AWS account, an AWS KMS key, an AWS DynamoDB Table, and the AWS SDK for .NET V3.
+However; all APIs require the AWS SDK for .NET V3.
+
 Note that `Async AmazonKeyManagementServiceClient` and `Async DynamoDBAsyncClient` methods are not supported, only the synchronous methods.
 
 * **To create an AWS account**, go to [Sign In or Create an AWS Account](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html) and then choose **I am a new user.** Follow the instructions to create an AWS account.
